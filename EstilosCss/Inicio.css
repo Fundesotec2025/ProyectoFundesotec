@@ -1,0 +1,209 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* carrucel  */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    /* Ajusta la altura máxima del carrusel */
+    object-fit: cover;
+    /* Asegura que las imágenes cubran el área sin distorsionarse */
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para el texto */
+    border-radius: 10px;
+    padding: 5% 2%;
+}
+
+.carousel-inner p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.carousel-inner p span {
+    font-size: 35px;
+    color: #f707db;
+}
+
+.carousel-inner a {
+    text-decoration: none;
+    padding: 20px 30px;
+    border: solid 5px #df07db;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 35px;
+}
+
+.carousel-inner a:hover {
+    background-color: #df07db;
+}
+
+/* estilos de fundacion primera parte  */
+
+.contenedorFundesotec {
+    margin-top: 5%;
+}
+
+.contenedorFundesotec h4 {
+    font-weight: bold;
+    color: rgb(18, 18, 18);
+}
+
+.contenedorFundesotec p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.contenedorFundesotec img {
+
+    width: 60%;
+}
+
+.contenedorFundesotec a {
+    text-decoration: none;
+    color: rgb(159, 7, 186);
+    border: solid 4px rgb(159, 7, 186);
+    padding: 15px 40px;
+    border-radius: 35px;
+    font-weight: bold;
+    margin-top: 4%;
+}
+
+.contenedorFundesotec a:hover {
+    background-color: rgb(159, 7, 186);
+    color: #fff;
+}
+
+.ContenedorImganes {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+}
+
+/* estilos de labores sociales  */
+.icono-labor {
+    width: 200px;
+    /* Ajusta según sea necesario */
+    height: 200px;
+    /* Mantiene el tamaño uniforme */
+    object-fit: contain;
+    /* Evita deformaciones */
+    display: block;
+    margin: 0 auto;
+    /* Centra la imagen */
+}
+
+.ContenedorLaborSociedad p {
+    font-size: 18px;
+    /* Tamaño de texto ajustable */
+    font-weight: bold;
+}
+
+.ContenedorLaborSociedad .cantidad {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.ContenedorLaborSociedad .cantidad:hover {
+    color: rgb(159, 7, 186);
+}
+
+/* contenedores de la imagen e encima de los textos  */
+
+.TextoEncimaDeLaImagen {
+    background-color: rgba(208, 12, 169, 0.6);
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.TextoEncimaDeLaImagen p {
+    text-align: center;
+}
+
+.TextoEncimaDeLaImagen a {
+    text-decoration: none;
+    color: rgb(159, 7, 186);
+    text-align: center;
+    background-color: #fff;
+    border: solid 3px rgb(159, 7, 186);
+    border-radius: 35px;
+    padding: 6px 20px;
+    font-size: 15px;
+}
+
+.TextoEncimaDeLaImagen a:hover {
+    color: #fff;
+    background-color: rgb(159, 7, 186);
+
+}
+
+/* --------------------------------------------- estilos de los contendores de los ODS -------------------------------------------------------*/
+.contenedorODS {
+    background-image: url(../Img/Inicio/AyudaSocialFondoODS.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedorODS1 {
+    background-color: rgb(171, 8, 171, 0.8);
+    padding: 30px 10px
+}
+
+.contenedorODS img {
+    margin: 2%;
+    width: 80%;
+    box-shadow: 20px 20px 20px #000;
+
+}
+
+.contenedorODS h2 {
+    font-size: 50px;
+    color: #fff;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ContenedorImg img {
+    width: 120%;
+}
+.ayudaFamilias img{
+    width: 100%;
+    border-radius: 45px;
+
+}
+
+/* ----------------------------------------------------------para pantallas pequenias  */
+@media (max-width: 767px) {
+
+    .TextoEncimaDeLaImagen a {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    .contenedorODS img {
+        width: 50%;
+       
+    
+    }
+}

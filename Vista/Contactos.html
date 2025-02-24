@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="EstilosCss/Contactos.css">
+</head>
+
+<body>
+    <div class="container-fluid hero bg-primary text-white text-center py-5 inicioContactos1">
+        <div class="row full-width justify-content-center">
+            <div class="col-12 col-md-6">
+                <p><span>"</span>Empieza por una acción pequeña para <span>LOGRAR GRANDES CAMBIOS"</span></p><br>
+                <a href=""><i class="bi bi-heart-fill"></i> Haz una DONACIÓN</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-12 inicioContactos">
+                <p>
+                    "En Fundesotec creemos que cada ayuda cuenta y que juntos podemos transformar vidas. Tu apoyo
+                    ilumina el camino de quienes más lo necesitan."
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid contenedorFormulario">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-5 mb-4 contenedorContactos">
+                <h2>Mantente en contacto con nosotros</h2>
+                <p>En Fundesotec estamos dedicados a transformar vidas, brindando apoyo y oportunidades a nuestra
+                    comunidad para construir juntos un futuro lleno de esperanza y progreso.</p>
+                <h3>Oficina Matriz</h3>
+                <p><i class="bi bi-house-fill"></i>Conocoto.</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Autopista General Rumiñahui:
+                    Juan  Lavalle N9 - 461 y Nicolás Aguilera</p>
+                <p><i class="bi bi-telephone-outbound-fill"></i> +593 98 453 3092</p>
+                <p><i class="bi bi-envelope-at-fill"></i> fundesotec@outlook.com</p>
+                <h3>Albergue Hotel</h3>
+                <p> <i class="bi bi-house-fill"></i> Quito Norte</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Pasaje B. 58 - 310 y Ángel Ludeña
+                    Frente a Emergencias del H.PAS</p>
+                <p><i class="bi bi-telephone-outbound-fill"></i> +593 2 259 6775 </p>
+                <p><i class="bi bi-envelope-at-fill"></i> fundesotec@outlook.com</p>
+
+                <h3>Consultorio Medico</h3>
+                <p> <i class="bi bi-house-fill"></i> Quito Norte</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Pasaje B. 58 - 310 y Ángel Ludeña (Albergue Hotel Fundesotec, Ultimo Piso)
+                    Frente a Emergencias del H.PAS </p>
+                <p><i class="bi bi-telephone-outbound-fill"></i> +593 98 631 7387</p>
+                <p><i class="bi bi-telephone-outbound-fill"></i> +593 95 898 8148 </p>
+                <p><i class="bi bi-envelope-at-fill"></i> fundesotec@outlook.com</p>
+            </div>
+            <div class="col-12 col-md-5 mb-4 contenedorContactos" id="formContactos">
+                <h2>Llena el formulario</h2>
+                <h3>Envíanos tu mensaje</h3>
+                <p>Si tienes alguna consulta, deseas realizar una donación o necesitas alguno de nuestros servicios, en
+                    Fundesotec estamos siempre disponibles para escucharte y atenderte.</p>
+                <form class="FormContactos">
+                    <!-- Row para Nombre y Correo -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="txtnombreCompleto" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="txtnombreCompleto"
+                                placeholder="Ingresa tu nombre completo" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="txtCorreo" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="txtCorreo"
+                                placeholder="Ingresa tu correo electrónico" required>
+                        </div>
+                    </div>
+                    <!-- Campo para Asunto -->
+                    <!-- donaciones, voluntarios ,informacion,sugerencia,Quejas o Reclamos, Otros -->
+                    <div class="mb-3">
+                        <label for="txtAsunto" class="form-label">Asunto</label>
+                        <select class="form-control" id="txtAsunto" required>
+                            <option value="" disabled selected>Selecciona un asunto</option>
+                            <option value="donaciones">Donaciones</option>
+                            <option value="voluntarios">Voluntarios</option>
+                            <option value="informacion">Información</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="quejas">Quejas o Reclamos</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    <!-- Campo para Mensaje -->
+                    <div class="mb-3">
+                        <label for="txtMensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="txtMensaje" rows="5" placeholder="Escribe tu mensaje aquí"
+                            required></textarea>
+                    </div>
+                    <!-- Botón de Envío -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn" id="btnEnviarMensaje">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid contAlbergue ">
+        <div class="row justify-content-center contAlbergue1">
+            <div class="col-12 col-md-5 mb-4">
+                <h3>Oficina Matriz</h3>
+                <p><i class="bi bi-house-fill"></i> Valle de los Chillos, Conocoto.</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Autopista General Rumiñahui:
+                    Juan Carlos Lavalle N9 - 461 y Nicolás Aguilera</p>
+                <p><i class="bi bi-telephone-outbound-fill"></i> +593 98 453 3092</p>
+                <p><i class="bi bi-telephone-outbound-fill"></i> +593 2 207 2116</p>
+                <p><i class="bi bi-envelope-at-fill"></i> fundesotec@outlook.com</p>
+                <p>Horario de atención</p>
+                <p>Lunes a Viernes: De 8:00 a. m. a 4:30 p. m.</p>
+            </div>
+            <div class="col-12 col-md-5 mb-4">
+                <iframe class="mapa mx-auto d-grid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.8849428406495!2d-78.47179623056465!3d-0.28231869997508824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d597f71fbb3c6d%3A0x5b91b15e1dbf7709!2sPuente%208!5e0!3m2!1ses!2sec!4v1738936154182!5m2!1ses!2sec"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  contMatriz">
+        <div class="row justify-content-center contMatriz1">
+            <div class="col-12 col-md-5 mb-4">
+                <h3>Albergue Hotel</h3>
+                <p> <i class="bi bi-house-fill"></i> Quito Norte</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Pasaje B. 58 - 310 y Ángel Ludeña
+                    Frente a Emergencias del H.PAS</p>
+                <p><i class="bi bi-telephone-outbound-fill"></i> +593 2 259 6775 </p>
+                <p><i class="bi bi-telephone-outbound-fill"></i> +593 99 002 9024 </p>
+                <p><i class="bi bi-envelope-at-fill"></i> fundesotec@outlook.com</p>
+                <p>Horario de atención</p>
+                <p>Lunes a Viernes: De 8:00 a. m. a 4:30 p. m.</p>
+            </div>
+            <div class="col-12 col-md-5 mb-4">
+                <iframe class="mapa mx-auto d-block"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.233487934567!2d-78.49654300000002!3d-0.127949!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5856aaf339825%3A0xf0415b15e1dbf7709!2sHospital%20Provincial%20General%20Pablo%20Arturo%20Suarez!5e0!3m2!1sen!2sus!4v1738936348938!5m2!1sen!2sus"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="View/Contactos.js"></script>
+</body>
+
+</html>

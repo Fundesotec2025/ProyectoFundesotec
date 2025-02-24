@@ -1,0 +1,255 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+}
+/* estilos de inicio nosotros  */
+.inicioDonaciones {
+    position: relative;
+    background-image: url(../Img/Donaciones/inicioDonaciones.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.camActivas {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(159, 7, 186);
+    padding-bottom: 3%;
+}
+
+.full-width {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 15%;
+    background-color: rgb(14, 14, 14, 0.5);
+
+}
+
+.inicioDonaciones p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.inicioDonaciones p span {
+    font-size: 35px;
+    color: #f707db;
+}
+
+.inicioDonaciones a {
+    text-decoration: none;
+    padding: 20px 30px;
+    border: solid 5px #df07db;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 35px;
+}
+
+.inicioDonaciones a:hover {
+    background-color: #df07db;
+}
+
+/* fin  estilos de inicio nosotros  */
+.tiendasSolidarias img {
+    width: 90%;
+    height: 60%;
+    border-radius: 35px;
+}
+
+.campActivas {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #7a39a0;
+    margin-bottom: 3%;
+}
+
+.contenedorCampActivas {
+    margin-bottom: 20px;
+    margin-top: 3%;
+}
+
+.contenedorCampActivas h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contenedorCampActivas p {
+    text-align: justify;
+    font-size: 22px;
+}
+
+.ContebedorVideo iframe {
+    width: 600px;
+    height: 400px;
+    border-radius: 35px;
+}
+
+/* ----------------------------------------------estilos de los proyectos--------------------------------- */
+/* tiendas solidarias */
+
+/* estilos de los botones de donaciones  */
+.donaciones .col-12 {
+    display: flex;
+    justify-content: center;
+}
+
+.donaciones a {
+    text-decoration: none;
+    color: rgb(159, 7, 186);
+    ;
+    border: solid 4px rgb(159, 7, 186);
+    ;
+    border-radius: 35px;
+    padding: 7px 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.donaciones a:hover {
+    color: #fff;
+    background-color: rgb(159, 7, 186);
+    ;
+}
+
+/* formulario  */
+.donacionesFundesotec {
+    padding: 3% 3%;
+}
+
+.donacionesFundesotec p {
+    font-size: 19px;
+    text-align: justify;
+    
+}
+
+.formDonaciones h4 {
+    font-size: 30px;
+}
+
+.donacionesFundesotec h2 {
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.donacionesFundesotec h2 img {
+    width: 80px;
+}
+
+.formDonaciones h4,
+label {
+    font-weight: bold;
+}
+
+.formDonaciones .form-group {
+    margin-bottom: 30px;
+}
+
+.contBtncheckout {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.formDonaciones input {
+    border: solid 1px #000;
+    border-radius: 35px;
+}
+
+#btncheckout,
+#btnEnviarDonacion {
+    padding: 10px 100px;
+    border-radius: 35px;
+    color: rgb(159, 7, 186);
+    ;
+    background-color: #fff;
+    border: solid 3px rgb(159, 7, 186);
+    ;
+    font-weight: bold;
+}
+
+#btncheckout:hover,
+#btnEnviarDonacion:hover {
+    color: #fff;
+    background-color: rgb(159, 7, 186);
+    ;
+}
+
+.contBtncheckout a img {
+    width: 105px;
+}
+
+.formDonaciones {
+    padding: 4% 4%;
+}
+
+.formDonaciones small {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.formDonaciones small span {
+    font-weight: bold;
+
+}
+/* button qr  */
+.buttonQR button {
+    background-color: rgb(159, 7, 186); /* Verde atractivo */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonQR button:hover {
+    background-color: rgb(202, 10, 236); /* Verde más oscuro */
+    transform: scale(1.05);
+}
+
+.buttonQR button i {
+    font-size: 20px;
+}
+
+#CodigoQR {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#CodigoQR img {
+    max-width: 150px; /* Ajusta el tamaño del código QR */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 767px) {
+    .donaciones a {
+        border-radius: 35px;
+        padding: 7px 13px;
+        font-size: 15px;
+    }
+
+}

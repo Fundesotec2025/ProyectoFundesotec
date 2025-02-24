@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundesotec</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../EstilosCss/Index.css">
+</head>
+
+<body>
+    <!-- encabezado - barra de navegacion  -->
+    <div class="container-fluid text-end inicioFundesotec">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="font-weight-bold slogan">Fundesotec <span>|</span> Ayudanos a Ayudar</p>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator"></div>
+    <nav class="navbar navbar-expand-lg navbar-light"> <!-- Agregado bg-light para mejor visibilidad -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../Img/LogoFundesotec.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                            onclick="cargarContenido('Inicio.html'); return cerrarMenu();">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                            onclick="cargarContenido('Nosotros.html'); return cerrarMenu();">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                            onclick="cargarContenido('Proyectos.html'); return cerrarMenu();">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                            onclick="cargarContenido('Donaciones.html'); return cerrarMenu();">Donaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                            onclick="cargarContenido('Noticias.html'); return cerrarMenu();">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                            onclick="cargarContenido('Estructura.html'); return cerrarMenu();">Estructura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                            onclick="cargarContenido('CACFundesotec.html'); return cerrarMenu();">CAC. Fundesotec</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                            onclick="cargarContenido('Contactos.html'); return cerrarMenu();">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- script de bara de nabegacion  -->
+    <script>
+        function cerrarMenu() {
+            let navbarToggler = document.querySelector('.navbar-toggler');
+            let navbarCollapse = document.querySelector('.navbar-collapse');
+
+            if (navbarToggler && navbarCollapse.classList.contains('show')) {
+                navbarToggler.click();
+            }
+            return false;
+        }
+    </script>
+
+    <!-- fin del encabezado  -->
+    <section class="Contenido" id="contenido">
+        <!-- aqui se cargan el contendio dinamicamente utilizando js  -->
+    </section>
+    <!-- inicio de pie de pagina  -->
+    <section>
+        <div class="container-flud contRS">
+            <div class="row justify-content-center ContenedorRedes">
+                <h2 class="text-center font-weight-bold text-white">Información de contacto</h2>
+                <h3 class="text-center font-weight-bold text-white">Nuestras redes sociales</h3>
+                <div class="col-md-1 d-flex justify-content-center align-items-center redsocial1">
+                    <p class="redesSociales"><br>
+                        <a href="https://www.facebook.com/fundesotec" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-1 d-flex justify-content-center align-items-center redsocial1">
+                    <p class="redesSociales"><br>
+                        <a href="https://www.instagram.com/fundesotec" target="_blank"> <i class="bi bi-instagram"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-1 d-flex justify-content-center align-items-center redsocial1">
+                    <p class="redesSociales"><br>
+                        <a href="https://www.tiktok.com/@fundesotec" target="_blank"> <i class="bi bi-tiktok"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-1 d-flex justify-content-center align-items-center redsocial1">
+                    <p class="redesSociales"><br>
+                        <a href="https://www.linkedin.com/company/fundación-desarrollo-social-y-tecnológico"
+                            target="_blank"> <i class="bi bi-linkedin"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-1 d-flex justify-content-center align-items-center redsocial1">
+                    <p class="redesSociales"><br>
+                        <a href="https://www.youtube.com/@fundesotec" target="_blank"> <i class="bi bi-youtube"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fuid contenedorFooter">
+            <div class="row">
+                <div class="col-md-3 contDatos">
+                    <h4 class="datosContactos">DIRECCIÓN</h4><br>
+                    <p class="informacion"><i class="bi bi-geo-alt"></i> Valle de los Chillos, Juan Carlos La valle N9 -
+                        461
+                        y Nicolás Aguirre</p>
+                    <h4 class="datosContactos">CORREO</h4><br>
+                    <p class="informacion"> <i class="bi bi-envelope"></i> fundesotec@outlook.com</p>
+                </div>
+                <div class="col-md-3 contDatos">
+                    <h4 class="datosContactos">TELÉFONOS</h4><br>
+                    <p class="informacion"><i class="bi bi-telephone-forward"></i> +593 98 453 3092</p>
+                    <p class="informacion"><i class="bi bi-telephone-forward"></i> +593 2 207 2116</p>
+                </div>
+                <div class="col-md-3 contDatos">
+                    <h4 class="datosContactos">HORARIO DE ATENCIÓN</h4><br>
+                    <p class="informacion"> <i class="bi bi-ethernet"></i> LUNES A VIERNES</p>
+                    <p class="informacion">De 8:00 a. m. a 4:30 p. m.</p>
+                </div>
+                <hr>
+                <h2 class="politicas">© 2018 - 2025 <span>Fundesotec</span>. Todos los derechos reservados</h2>
+            </div>
+        </div>
+    </section>
+    <script src="../View/Index.js"></script>
+    <script src="../View/Proyectos.js"></script>
+    <script src="../View/Donaciones.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+}
+/* estilos de contenedores de los directivos  */
+.contenedorDirectivos {
+    margin-bottom: 3%;
+}
+
+.contenedorDirectivos p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+.contenedorJimenes {
+    background-color:  rgb(202, 11, 235);
+    padding: 9px 8px;
+}
+
+.contenedorMachuca,
+.contenedorTaipe{
+    background-color:  rgb(202, 11, 235);
+    margin: 4px;
+    padding: 9px 8px;
+}
+.contenedorMachuca:hover, 
+.contenedorTaipe:hover,
+.contenedorJimenes:hover{
+    background-color:  rgb(139, 16, 160);
+    box-shadow: 20px 20px 20px #373636;
+
+}
+/* estilos de inicio nosotros  */
+.contEstructura {
+    margin: 3% 3%;
+}
+
+.contEstructura h1 {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #7a39a0;
+}
+
+.inicioEstructura {
+    position: relative;
+    background-image: url(../Img/Estructura/inicioEstructura.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.full-width {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 15%;
+    background-color: rgb(14, 14, 14, 0.5);
+
+}
+
+.inicioEstructura p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.inicioEstructura p span {
+    font-size: 35px;
+    color: #f707db;
+}
+
+.inicioEstructura a {
+    text-decoration: none;
+    padding: 20px 30px;
+    border: solid 5px #df07db;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 35px;
+}
+
+.inicioEstructura a:hover {
+    background-color: #df07db;
+}
+
+/* fin  estilos de inicio nosotros  */
+.contenedorEstructura img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 35px;
+    border: solid 1px #000;
+    box-shadow: 10px 10px 10px rgb(16, 16, 15);
+}
+
+.contIng img {
+    width: 80%;
+}
+
+.contenedorEstructura h3,
+h4 {
+    font-weight: bold;
+}
+
+.contenedorEstructura p {
+    text-align: justify;
+
+}
+
+@media(max-width: 767px) {
+    * {
+        font-size: 15px;
+    }
+
+    .contenedorEstructura img {
+        width: 50%;
+
+    }
+}

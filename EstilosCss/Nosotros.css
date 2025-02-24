@@ -1,0 +1,304 @@
+.tituloQSomos {
+    margin-bottom: 10px;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(159, 7, 186);
+}
+
+/* estilos de inicio nosotros  */
+.inicioNosotros {
+    position: relative;
+    background-image: url(../Img/Nosotros/InicioNosotros.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.full-width {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 15%;
+    background-color: rgb(14, 14, 14, 0.5);
+
+}
+
+.inicioNosotros p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.inicioNosotros p span {
+    font-size: 35px;
+    color: #f707db;
+}
+
+.inicioNosotros a {
+    text-decoration: none;
+    padding: 20px 30px;
+    border: solid 5px #df07db;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 35px;
+}
+
+.inicioNosotros a:hover {
+    background-color: #df07db;
+}
+
+/* fin  estilos de inicio nosotros  */
+
+.parrafoNosotros {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.imgQuinesSomos img {
+    width: 50%;
+    height: 90%;
+    border-radius: 35px;
+}
+
+.contMisionvicion {
+    background-image: url(../Img/Bibliotecas1.jpg);
+}
+
+/* ESTILOS DE MISION Y VICION  */
+.SubContMisionVicion {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(240, 2, 2, 0.6);
+    background-color: rgba(164, 9, 164, 0.9);
+}
+
+.contMisionvicion h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.contMisionvicion p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* estilos de 7 años de fundesotec */
+.contenedor7añosFundesotec {
+    padding-top: 50px;
+    padding-bottom: 3%;
+}
+
+.contenedor7añosFundesotec h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.contenedor7añosFundesotec p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.contenedor7añosFundesotec .nuestraTrayectoria {
+    text-decoration: none;
+    border: solid 4px #7a39a0;
+    color: #7a39a0;
+    padding: 10px 10px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 35px;
+}
+
+.contenedor7añosFundesotec .nuestraTrayectoria:hover {
+    color: #fff;
+    background-color: #7a39a0;
+
+}
+
+.img7añosFundesotec img {
+    width: 80%;
+    height: 90%;
+    border-radius: 35px;
+}
+
+/* estilos de la galeria ayudas sociales  */
+.ContGaleriaDeImagenes img {
+    width: 100%;
+    height: 130%;
+    border-radius: 40px;
+    filter: brightness(70%);
+    transition: filter 0.3s ease;
+}
+
+.ContGaleriaDeImagenes img:hover {
+    filter: brightness(100%);
+}
+
+.ContGaleriaDeImagenes h2 {
+    font-weight: bold
+}
+
+.subContGaleriaDeImagenes {
+    margin-bottom: 50px;
+}
+
+/* estilos de la revista Fundesotec 2025 */
+.contenedorRevista {
+    text-align: justify;
+    font-size: 22px;
+    padding-top: 3%;
+}
+
+.contenedorRevista h3 {
+    text-align: center;
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+}
+
+.contenedorRevista img {
+    width: 75%;
+    height: 90%;
+    box-shadow: 20px 20px 20px rgba(97, 93, 97, 0.9)
+}
+
+/* link de la revista */
+.contenedorRevista a {
+    display: inline-block;
+    /* Para que el enlace tenga forma de botón */
+    padding: 2px 15px;
+    /* Espaciado interno para hacerlo más grande */
+    background-color: #fff;
+    /* Color de fondo */
+    color: rgb(159, 7, 186);
+    /* Color del texto */
+    text-decoration: none;
+    /* Quita el subrayado */
+    font-size: 25px;
+    /* Tamaño del texto */
+    border: solid 4px rgb(159, 7, 186);
+    border-radius: 35px;
+    /* Bordes redondos */
+    font-weight: bold;
+}
+
+.contenedorRevista a:hover {
+    background-color: rgb(159, 7, 186);
+    color: #fff;
+}
+
+/* estilos de informacion de Dr.Porfirio Jiménez */
+.contDrPorfilioJ {
+    background-image: url(../Img/Bibliotecas1.jpg);
+}
+
+.subcontDrPorfilioJ {
+    padding-top: 100px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(240, 2, 2, 0.6);
+    background-color: rgba(97, 93, 97, 0.9);
+}
+
+.contDrPorfilioJ img {
+    width: 70%;
+    height: 90%;
+    border-radius: 50%;
+
+}
+
+.contDrPorfilioJ {
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+/* estilos de contenedores fines institucionales  */
+.NoticiasInicio h1 {
+    font-weight: bold;
+}
+
+.contenedorFines {
+    margin: 1%;
+    border-radius: 40px;
+    box-shadow: 10px 10px 10px rgba(50, 50, 49, 0.5);
+}
+
+.contenedorFines h3 {
+    font-weight: bold;
+}
+
+.contenedorFines p {
+    text-align: justify;
+    font-weight: bold;
+}
+
+.contenedorFines img {
+    width: 90%;
+}
+
+.contenedorFines .row {
+    padding-top: 2%;
+}
+
+#DesarrolloSocial {
+    background-color: rgb(123, 238, 7);
+}
+
+#EducacionCultural {
+    background-color: rgba(76, 66, 158, 0.789);
+}
+
+#SeguridadAlimenticia {
+    background-color: rgb(242, 208, 166);
+}
+
+#Salud {
+    background-color: rgb(118, 156, 175);
+}
+
+#EmprendimientosPymes {
+    background-color: rgb(184, 119, 245);
+
+}
+
+#tecnología {
+    background-color: rgb(132, 129, 129);
+
+}
+
+#agricultura {
+    background-color: aqua;
+}
+
+/* fin de estilos de noticias  */
+/* Reducción del tamaño de las imágenes para dispositivos pequeños (como móviles) */
+@media (max-width: 767px) {
+    * {
+        font-size: 12px;
+    }
+
+    .ContGaleriaDeImagenes img {
+        width: 90%;
+        height: 80%;
+    }
+
+    .contenedor7añosFundesotec .nuestraTrayectoria {
+        font-size: 12px;
+        padding: 9px;
+    }
+
+    .contenedorRevista a {
+        font-size: 12px;
+        padding: 9px;
+    }
+
+    .subContGaleriaDeImagenes {
+        margin-bottom: 0px;
+    }
+}
