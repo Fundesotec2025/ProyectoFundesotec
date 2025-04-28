@@ -1,80 +1,78 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".formDonaciones");
+  const btnCodigoQR = document.getElementById('btnQr');
+  const btnEnviar = document.getElementById("btnEnviarDonacion");
+
   ocultarQR();
 
-  const btnCodigoQR = document.getElementById('btnQr');
+  btnCodigoQR.addEventListener('click', toggleQR);
 
-  btnCodigoQR.addEventListener('click', VerQR);
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Evita el envío tradicional del formulario
+    // Asignar atributos name si no existen
+    asignarNames();
 
-    // Asigna atributos "name" a los campos que no los tengan
-    document.getElementById("txtNombre").setAttribute("name", "nombre");
-    document.getElementById("txtApellido").setAttribute("name", "apellido");
-    document.getElementById("txtMonto").setAttribute("name", "monto");
-    document.getElementById("txtCorreoElectronico").setAttribute("name", "correoElectronico");
-    document.getElementById("txtMetodoPago").setAttribute("name", "metodoPago");
+    // Obtener valores del formulario
+    const nombre = document.getElementById("txtNombre").value.trim();
+    const apellido = document.getElementById("txtApellido").value.trim();
+    const monto = document.getElementById("txtMonto").value.trim();
+    const correo = document.getElementById("txtCorreoElectronico").value.trim();
+    const confirmarCorreo = document.getElementById("txtCorreoConfirmar").value.trim();
+    const metodoPago = document.getElementById("txtMetodoPago").value;
 
-    // Validación: comprueba que el correo y su confirmación sean iguales
-    const correo = document.getElementById("txtCorreoElectronico").value;
-    const correoConfirmar = document.getElementById("txtCorreoConfirmar").value;
-    if (correo !== correoConfirmar) {
+    // Validaciones básicas
+    if (!nombre || !apellido || !monto || !correo || !metodoPago) {
+      alert("Por favor, completa todos los campos obligatorios.");
+      return;
+    }
+
+    if (correo !== confirmarCorreo) {
       alert("Los correos electrónicos no coinciden.");
       return;
     }
 
-    // Cambia el texto del botón para indicar que se está enviando
-    const btn = document.getElementById("btnEnviarDonacion");
-    btn.innerText = "Enviando...";
+    btnEnviar.innerText = "Enviando...";
 
-    // Primero, guarda la donación en la base de datos
-    guardarRegistroDonaciones()
-      .then(() => {
-        btn.innerText = "Enviar Donación";
-        alert("¡Éxito! La información se ha enviado correctamente.");
-        form.reset(); // Limpiar el formulario después de un registro exitoso
-      })
-      .catch((err) => {
-        btn.innerText = "Enviar Donación";
-        alert("Hubo un error en el proceso: " + JSON.stringify(err));
-      });
+    try {
+      await guardarRegistroDonaciones({ nombre, apellido, monto, correo, metodoPago });
+      alert("¡Éxito! La información se ha enviado correctamente.");
+      form.reset();
+    } catch (err) {
+      alert("Hubo un error en el proceso: " + err);
+    } finally {
+      btnEnviar.innerText = "Enviar Donación";
+    }
   });
 });
 
-function guardarRegistroDonaciones() {
+function asignarNames() {
+  document.getElementById("txtNombre").setAttribute("name", "nombre");
+  document.getElementById("txtApellido").setAttribute("name", "apellido");
+  document.getElementById("txtMonto").setAttribute("name", "monto");
+  document.getElementById("txtCorreoElectronico").setAttribute("name", "correoElectronico");
+  document.getElementById("txtMetodoPago").setAttribute("name", "metodoPago");
+}
+
+function guardarRegistroDonaciones(datos) {
   return new Promise((resolve, reject) => {
-    const txtNombre = document.getElementById('txtNombre').value;
-    const txtApellido = document.getElementById('txtApellido').value;
-    const txtMonto = document.getElementById('txtMonto').value;
-    const txtCorreoElectronico = document.getElementById('txtCorreoElectronico').value;
-    const txtCorreoConfirmar = document.getElementById('txtCorreoConfirmar').value;
-    const txtMetodoPago = document.getElementById('txtMetodoPago').value;
+    const formData = new FormData();
+    formData.append('nombre', datos.nombre);
+    formData.append('apellido', datos.apellido);
+    formData.append('monto', datos.monto);
+    formData.append('correoElectronico', datos.correo);
+    formData.append('metodoPago', datos.metodoPago);
 
-    if (txtCorreoElectronico !== txtCorreoConfirmar) {
-      alert('Los correos electrónicos no coinciden');
-      reject("Los correos no coinciden");
-      return;
-    }
-
-    const datosDonacion = new FormData();
-    datosDonacion.append('nombre', txtNombre);
-    datosDonacion.append('apellido', txtApellido);
-    datosDonacion.append('monto', txtMonto);
-    datosDonacion.append('correoElectronico', txtCorreoElectronico);
-    datosDonacion.append('metodoPago', txtMetodoPago);
-
-    // Enviar los datos al controlador
     fetch('controlador/DonacionesControlador.php', {
       method: 'POST',
-      body: datosDonacion
+      body: formData
     })
       .then(response => response.json())
       .then(data => {
         if (data.success) {
-          resolve(); // Registro exitoso
+          resolve();
         } else {
-          reject('Hubo un error al procesar la donación');
+          reject(data.message || 'Hubo un error al procesar la donación');
         }
       })
       .catch(error => {
@@ -84,10 +82,13 @@ function guardarRegistroDonaciones() {
   });
 }
 
-
 function ocultarQR() {
   $('#CodigoQR').hide();
 }
-function VerQR() {
-  $('#CodigoQR').toggle(); // Alterna entre mostrar y ocultar
+
+function toggleQR() {
+  const qr = $('#CodigoQR');
+  const btn = $('#btnQr');
+  qr.toggle();
+  btn.text(qr.is(':visible') ? 'Ocultar QR' : 'Ver QR');
 }

@@ -159,3 +159,21 @@
     text-align: justify;
     color: #fff;
 }
+@media (max-width: 768px) {
+    .inicioContactos1 p {
+        font-size: 20px;
+    }
+
+    .inicioContactos1 p span {
+        font-size: 24px;
+    }
+
+    .contenedorContactos h2, .contenedorContactos h3 {
+        font-size: 24px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}

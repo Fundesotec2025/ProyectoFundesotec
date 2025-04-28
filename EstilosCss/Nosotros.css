@@ -302,3 +302,27 @@
         margin-bottom: 0px;
     }
 }
+
+@media (max-width: 767px) {
+    .tituloQSomos {
+        font-size: 30px;
+    }
+
+    .inicioNosotros p,
+    .inicioNosotros p span {
+        font-size: 20px;
+    }
+
+    .imgQuinesSomos img,
+    .img7añosFundesotec img,
+    .contenedorRevista img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .SubContMisionVicion,
+    .subcontDrPorfilioJ {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+}

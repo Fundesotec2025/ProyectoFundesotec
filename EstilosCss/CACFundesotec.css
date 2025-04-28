@@ -108,3 +108,58 @@
     font-size: 20px;
 
 }
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+
+    .inicioCAC p {
+        font-size: 22px;
+    }
+
+    .inicioCAC p span {
+        font-size: 26px;
+    }
+
+    .inicioCAC a {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .contenedorCAC a {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .contenedorCAC .Convenio {
+        width: 100%;
+    }
+
+    .contenedorCAC img {
+        width: 90%;
+    }
+
+    .contenedorInfoCACF p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .inicioCAC p {
+        font-size: 18px;
+    }
+
+    .inicioCAC p span {
+        font-size: 22px;
+    }
+
+    .contenedorCAC a {
+        font-size: 14px;
+    }
+
+    .contenedorInfoCACF p {
+        font-size: 16px;
+    }
+}

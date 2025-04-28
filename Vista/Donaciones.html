@@ -2,11 +2,22 @@
 <html lang="es">
 
 <head>
+      <!-- Vinculo con Google Analytic tag (gtag.js) -->
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-74WS4X4NPE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-74WS4X4NPE');
+  </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donaciones</title>
     <link rel="stylesheet" href="EstilosCss/Donaciones.css">
 </head>
+
 
 <body>
     <!-- Hero Section -->
@@ -100,7 +111,7 @@
                 </iframe>
             </div>
 
-        </div>
+        </div> 
     </div>
     <!-- formulario de donaciones  -->
     <div class="container" id="Donaciones">
@@ -159,7 +170,13 @@
                                 placeholder="tumail@correo.com" required>
                         </div>
                     </div>
-                    <!-- Método de Pago -->
+                    <!--metodo para wasapt -->
+              <!-- Campo para ingresar el número de WhatsApp -->
+<div class="form-group">
+    <label for="txtNumeroWhatsApp">Número de WhatsApp:</label><br>
+    <input type="text" class="form-control" id="txtNumeroWhatsApp" name="numeroWhatsApp" required>
+</div>
+ <!-- Método de Pago -->
                     <br>
                     <div class="form-group">
                         <label for="txtMetodoPago">Método de Pago:</label><br>
@@ -169,19 +186,8 @@
                             <option value="otros">Otros</option>
                         </select>
                     </div>
-                    <div class="col-12 col-md-12 mb-4">
-                        <div class="buttonQR">
-                            <button type="button" name="btnQr" id="btnQr">Donar con Código QR &nbsp;&nbsp;&nbsp;<i
-                                    class="bi bi-substack"></i></button>
-                            <!-- agregar combenios de las Universidades -->
-                        </div>
-                        <div class="row justify-content-center" id="CodigoQR">
-                            <div class="col-12 col-md-12 mb-4">
-                                <img src="Img/EducacionCalidad.png" alt="">
-                            </div>
-
-                        </div>
-                    </div>
+                   
+        
                     <div class="parrafo"><br>
                         <small id="smallDonacion" class="form-text text-muted">Al hacer clic en "Enviar Donación",
                             recibirás un correo con los datos bancarios. Realiza

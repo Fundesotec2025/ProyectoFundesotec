@@ -101,155 +101,248 @@
 
 /* ----------------------------------------------estilos de los proyectos--------------------------------- */
 /* tiendas solidarias */
+/* Estilo para la sección de donaciones */
+#Donaciones {
+    background-color: #ffffff; /* Fondo gris claro */
+    padding: 80px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* estilos de los botones de donaciones  */
-.donaciones .col-12 {
+/* Título de la sección */
+.donacionesFundesotec h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366; 
+    margin-bottom: 70px;  /* Aumento del margen para separarlo más de la descripción */
+    margin-top: 90px;     /* Mover el título más abajo */
+    text-transform: uppercase;
+    letter-spacing: 3px;
     display: flex;
     justify-content: center;
-}
-
-.donaciones a {
-    text-decoration: none;
-    color: rgb(159, 7, 186);
-    ;
-    border: solid 4px rgb(159, 7, 186);
-    ;
-    border-radius: 35px;
-    padding: 7px 22px;
-    font-weight: bold;
+    align-items: center;
+    gap: 10px;
     text-align: center;
 }
 
-.donaciones a:hover {
-    color: #fff;
-    background-color: rgb(159, 7, 186);
-    ;
-}
-
-/* formulario  */
-.donacionesFundesotec {
-    padding: 3% 3%;
-}
-
-.donacionesFundesotec p {
-    font-size: 19px;
-    text-align: justify;
-    
-}
-
-.formDonaciones h4 {
-    font-size: 30px;
-}
-
-.donacionesFundesotec h2 {
-    text-align: center;
-    font-weight: bold;
-    
-}
-
+/* Mejorar visibilidad de los íconos */
 .donacionesFundesotec h2 img {
-    width: 80px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
-.formDonaciones h4,
+.donacionesFundesotec h2 img:hover {
+    transform: scale(1.1);  
+}
+
+/* Estilo para el texto descriptivo */
+.donacionesFundesotec p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #030303;  /* Texto gris más oscuro para mayor legibilidad */
+    text-align: justify;  /* Justificar el texto */
+    margin-bottom: 300px;  /* Aumento de la separación con el formulario */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo para el formulario de donaciones */
+.formDonaciones {
+    background-color: #FFFFFF;
+    border: 2px solid #CCCCCC;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    font-size: 16px;
+    max-width: 1600px;  /* Aumento aún mayor del ancho máximo del formulario */
+    margin: 0 auto;
+    text-align: left; /* Para que los campos del formulario estén alineados a la izquierda */
+}
+
+/* Estilo para los grupos de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
 label {
-    font-weight: bold;
+    font-weight: 600;
+    color: #003366;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
 }
 
-.formDonaciones .form-group {
-    margin-bottom: 30px;
+/* Inputs y selectores */
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #FAFAFA;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #9F07BA;
+    background-color: #FFF0F6;
+    outline: none;
+}
+
+/* Estilo para el botón de envío */
+button[type="submit"] {
+    background-color: #9F07BA;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 30px;
+}
+
+button[type="submit"]:hover {
+    background-color: #8E006E;
+}
+
+/* Estilo para el botón de PayPal */
 .contBtncheckout {
     display: flex;
     justify-content: center;
-    margin: 30px;
+    margin-top: 30px;
 }
 
-.formDonaciones input {
-    border: solid 1px #000;
-    border-radius: 35px;
+.contBtncheckout a {
+    display: inline-block;
+    text-align: center;
+    background-color: #aabac9;  /* Color de fondo de PayPal */
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
 }
 
-#btncheckout,
-#btnEnviarDonacion {
-    padding: 10px 100px;
-    border-radius: 35px;
-    color: rgb(159, 7, 186);
-    ;
-    background-color: #fff;
-    border: solid 3px rgb(159, 7, 186);
-    ;
-    font-weight: bold;
-}
-
-#btncheckout:hover,
-#btnEnviarDonacion:hover {
-    color: #fff;
-    background-color: rgb(159, 7, 186);
-    ;
+.contBtncheckout a:hover {
+    background-color: #9F07BA; /* Cambio a un color llamativo en hover */
 }
 
 .contBtncheckout a img {
-    width: 105px;
+    width: 160px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.formDonaciones {
-    padding: 4% 4%;
-}
-
-.formDonaciones small {
-    text-align: justify;
-    font-size: 15px;
-}
-
-.formDonaciones small span {
-    font-weight: bold;
-
-}
-/* button qr  */
-.buttonQR button {
-    background-color: rgb(159, 7, 186); /* Verde atractivo */
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.buttonQR button:hover {
-    background-color: rgb(202, 10, 236); /* Verde más oscuro */
+.contBtncheckout a:hover img {
     transform: scale(1.05);
 }
 
-.buttonQR button i {
-    font-size: 20px;
+/* Estilos para los inputs de correo */
+#txtCorreoElectronico, #txtCorreoConfirmar {
+    background-color: #FAFAFA;
 }
 
-#CodigoQR {
-    text-align: center;
-    margin-top: 15px;
-}
-
-#CodigoQR img {
-    max-width: 150px; /* Ajusta el tamaño del código QR */
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-@media (max-width: 767px) {
-    .donaciones a {
-        border-radius: 35px;
-        padding: 7px 13px;
-        font-size: 15px;
+/* Responsividad */
+@media (max-width: 768px) {
+    .donacionesFundesotec h2 {
+        font-size: 32px;
     }
 
+    .formDonaciones {
+        padding: 30px;
+        max-width: 100%; /* Ajuste para pantallas pequeñas */
+    }
+
+    .contBtncheckout a img {
+        width: 140px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+/* Mejoras adicionales para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustes ya existentes (no hay cambios aquí) */
+    .donacionesFundesotec h2 {
+        font-size: 32px;
+    }
+
+    .formDonaciones {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .contBtncheckout a img {
+        width: 140px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+
+    /* Mejoras nuevas */
+    .ContebedorVideo iframe {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .tiendasSolidarias img {
+        width: 100%;
+        height: auto;
+    }
+
+    .inicioDonaciones p,
+    .inicioDonaciones p span {
+        font-size: 20px;
+    }
+
+    .inicioDonaciones a {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 20px 10px;
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .camActivas,
+    .campActivas {
+        font-size: 30px;
+    }
+
+    .donacionesFundesotec h2 {
+        font-size: 24px;
+    }
+
+    .inicioDonaciones p,
+    .inicioDonaciones p span {
+        font-size: 18px;
+    }
+
+    .formDonaciones {
+        padding: 20px;
+    }
+
+    .contBtncheckout a img {
+        width: 120px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
 }

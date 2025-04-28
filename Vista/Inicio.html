@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+      <!-- Vinculo con Google Analytic tag (gtag.js) -->
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-74WS4X4NPE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-74WS4X4NPE');
+  </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
@@ -83,105 +93,132 @@
             </button>
         </div>
     </section>
-    <div class="container-fluid contenedorFundesotec">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-5 mb-4">
-                <h4 class="text-align">Desde 2018</h4>
-                <h1 class="text-align">Fundación Desarrollo Social y Tecnológico</h1>
-                <p>Somos una organización sin fines de lucro que brinda servicios de salud,
-                    educación, seguridad,
-                    alimentación y tecnología a personas vulnerables. Trabajamos en programas comunitarios para promover
-                    el desarrollo social, económico y cultural, fortaleciendo el tejido social. Nuestra misión es
-                    ofrecer servicios de calidad con calidez y dignidad, garantizando el bienestar de los grupos
-                    prioritarios. Aspiramos a ser un referente nacional para el 2027, consolidándonos como una fundación
-                    sostenible y creíble, enfocada en áreas rurales y en mejorar la calidad de vida con un enfoque
-                    humanista.</p><br>
-                <a href="index.php?page=Vista/Nosotros.html">Conoce más sobre Fundesotec</a>
-            </div>
-            <div class="col-12 col-md-6 mb-4">
-                <div class="ContenedorImganes">
-                    <img src="Img/Inicio/TiendaSolidaria.png" alt="Tienda Solidaria">
-                    <div class="TextoEncimaDeLaImagen">
-                        <p>Tienda Comedor Solidaria</p>
-                        <a href="index.php?page=Vista/Proyectos.html">Conoce más <i
-                                class="bi bi-arrow-right-square"></i></a>
-                    </div>
-                </div>
-                <div class="ContenedorImganes">
-                    <img src="Img/Inicio/ConsultorioMedicoFundesotec.png" alt="Consultorio Medico Fundesotec">
-                    <div class="TextoEncimaDeLaImagen">
-                        <p>Consultorio Médico Fundesotec</p>
-                        <a href="index.php?page=Vista/Proyectos.html">Conoce más <i
-                                class="bi bi-arrow-right-square"></i></a>
-                    </div>
-                </div>
-            </div>
+    <!-- Contenedor de Fundesotec -->
+<div class="container-fluid contenedorFundesotec">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-6 mb-4 text-center text-md-left">
+            <h4>Desde 2018</h4>
+            <h1>Fundación Desarrollo Social y Tecnológico</h1>
+            <p>Somos una organización sin fines de lucro que brinda servicios de salud, educación, seguridad, alimentación y tecnología a personas vulnerables. Trabajamos en programas comunitarios para promover el desarrollo social, económico y cultural, fortaleciendo el tejido social. Nuestra misión es ofrecer servicios de calidad con calidez y dignidad, garantizando el bienestar de los grupos prioritarios. Aspiramos a ser un referente nacional para el 2027, consolidándonos como una fundación sostenible y creíble, enfocada en áreas rurales y en mejorar la calidad de vida con un enfoque humanista.</p>
+            <a href="index.php?page=Vista/Nosotros.html" class="btn btn-outline-primary">Conoce más sobre Fundesotec</a>
         </div>
-    </div>
-    <!-- ///////////////////////////////////////////////////////////////NUESTRA LABOR EN LA SOCIEDAD ------------------------------->
-    <div class="container-fluid ContenedorLaborSociedad">
-        <div class="row justify-content-center">
-            <h2 class="text-center fw-bold">NUESTRA LABOR EN LA SOCIEDAD</h2>
-            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
-                <img class="img-fluid icono-labor" src="Img/Inicio/kistsAlimenticias.png"
-                    alt="KIST ALIMENTICIOS ENTREGADOS">
-                <p>KIST ALIMENTICIOS <br>ENTREGADOS</p>
-                <p class="cantidad">4260</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
-                <img class="img-fluid icono-labor" src="Img/Inicio/racionesAlimenticias.png"
-                    alt="RACIONES ALIMENTICIAS DONADAS">
-                <p>RACIONES ALIMENTICIAS<br>DONADAS</p>
-                <p class="cantidad">41856</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
-                <img class="img-fluid icono-labor" src="Img/Inicio/personasAtendidas.png" alt="PERSONAS ATENDIDAS">
-                <p>PERSONAS<br>ATENDIDAS</p>
-                <p class="cantidad">67405</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
-                <img class="img-fluid icono-labor" src="Img/Inicio/bibliotecasComunitarias.png"
-                    alt="BIBLIOTECAS COMUNITARIAS ENTREGADAS">
-                <p>BIBLIOTECAS COMUNITARIAS<br>ENTREGADAS</p>
-                <p class="cantidad">28</p>
 
-            </div>
+        <!-- Columna de imágenes -->
+        <div class="col-12 col-md-6 mb-4">
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="Img/Inicio/TiendaSolidaria.png" alt="Tienda Solidaria" class="img-fluid">
+                    <div class="image-text">
+                        <p>Tienda Comedor Solidaria</p>
+                        <a href="index.php?page=Vista/Proyectos.html" class="btn btn-light">Conoce más</a>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="Img/Inicio/ConsultorioMedicoFundesotec.png" alt="Consultorio Médico Fundesotec" class="img-fluid">
+                    <div class="image-text">
+                        <p>Consultorio Médico Fundesotec</p>
+                        <a href="index.php?page=Vista/Proyectos.html" class="btn btn-light">Conoce más</a>
+                    </div>
+                </div>
+            </div> 
         </div>
     </div>
-    <!----------------------------------------------------------------- LAS ODS  --------------------------------------------------->
-    <div class="container-fluid contenedorODS">
-        <div class="row justify-content-center contenedorODS1">
-            <h2 class="text-center">Comprometidos con los ODS</h2>
-            <div class="col-12 col-sm-6 col-md-3 text-center">
+</div>
+
+<!-- Sección de "Nuestra Labor en la Sociedad" -->
+<div class="container-fluid contenedorLabor">
+    <div class="row justify-content-center">
+        <h2 class="text-center fw-bold">NUESTRA LABOR EN LA SOCIEDAD</h2>
+        <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+            <img class="img-fluid icono-labor" src="Img/Inicio/kistsAlimenticias.png" alt="KIST ALIMENTICIOS ENTREGADOS">
+            <p>KIST ALIMENTICIOS <br>ENTREGADOS</p>
+            <p class="cantidad">4260</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+            <img class="img-fluid icono-labor" src="Img/Inicio/racionesAlimenticias.png" alt="RACIONES ALIMENTICIAS DONADAS">
+            <p>RACIONES ALIMENTICIAS<br>DONADAS</p>
+            <p class="cantidad">41856</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+            <img class="img-fluid icono-labor" src="Img/Inicio/personasAtendidas.png" alt="PERSONAS ATENDIDAS">
+            <p>PERSONAS<br>ATENDIDAS</p>
+            <p class="cantidad">67405</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+            <img class="img-fluid icono-labor" src="Img/Inicio/bibliotecasComunitarias.png" alt="BIBLIOTECAS COMUNITARIAS ENTREGADAS">
+            <p>BIBLIOTECAS COMUNITARIAS<br>ENTREGADAS</p>
+            <p class="cantidad">28</p>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------------------- LAS ODS  --------------------------------------------------->
+<div class="container-fluid contenedorODS">
+    <div class="row justify-content-center contenedorODS1">
+        <h2 class="text-center">Comprometidos con los ODS</h2>
+        
+        <!-- Contenedor de imágenes con texto al hacer hover -->
+        <div class="col-12 col-sm-6 col-md-3 text-center">
+            <div class="image-container">
                 <img class="img-fluid" src="Img/Inicio/ODSFinPobreza.png" alt="Fin de la Pobreza">
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 text-center">
-                <img class="img-fluid" src="Img/Inicio/ODSHambreCero.png" alt="Hambre Cero">
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 text-center">
-                <img class="img-fluid" src="Img/Inicio/ODSSaludBienestar.png" alt="Salud y Bienestar">
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 text-center">
-                <img class="img-fluid" src="Img/Inicio/ODSEducacionCalidad.png" alt="Educación de Calidad">
+                <div class="overlay">
+                </div>
             </div>
         </div>
-        <div class="row justify-content-center contenedorODS1">
-            <div class="col-12 col-sm-6 col-md-3 text-center">
-                <img class="img-fluid" src="Img/Inicio/ODSIgualdadDeGenero.png" alt="Igualdad de Género">
+        <div class="col-12 col-sm-6 col-md-3 text-center">
+            <div class="image-container">
+                <img class="img-fluid" src="Img/Inicio/ODSHambreCero.png" alt="Hambre Cero">
+                <div class="overlay">
+                </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3 text-center">
-                <img class="img-fluid" src="Img/Inicio/ODSReduccionDesigualdades.png" alt="Reducción de Desigualdades">
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 text-center">
+            <div class="image-container">
+                <img class="img-fluid" src="Img/Inicio/ODSSaludBienestar.png" alt="Salud y Bienestar">
+                <div class="overlay">
+                </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3 text-center">
-                <img class="img-fluid" src="Img/Inicio/ODSProduccionConsumoResponsable.png"
-                    alt="Producción y Consumo Responsable">
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 text-center">
-                <img class="img-fluid" src="Img/Inicio/ODSAlianzaParaLograrObjetivos.png"
-                    alt="Alianza para los Objetivos">
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 text-center">
+            <div class="image-container">
+                <img class="img-fluid" src="Img/Inicio/ODSEducacionCalidad.png" alt="Educación de Calidad">
+                <div class="overlay">
+                </div>
             </div>
         </div>
     </div>
+    <div class="row justify-content-center contenedorODS1">
+        <div class="col-12 col-sm-6 col-md-3 text-center">
+            <div class="image-container">
+                <img class="img-fluid" src="Img/Inicio/ODSIgualdadDeGenero.png" alt="Igualdad de Género">
+                <div class="overlay">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 text-center">
+            <div class="image-container">
+                <img class="img-fluid" src="Img/Inicio/ODSReduccionDesigualdades.png" alt="Reducción de Desigualdades">
+                <div class="overlay">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 text-center">
+            <div class="image-container">
+                <img class="img-fluid" src="Img/Inicio/ODSProduccionConsumoResponsable.png" alt="Producción y Consumo Responsable">
+                <div class="overlay">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 text-center">
+            <div class="image-container">
+                <img class="img-fluid" src="Img/Inicio/ODSAlianzaParaLograrObjetivos.png" alt="Alianza para los Objetivos">
+                <div class="overlay">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <div class="container contenedorFundesotec">
         <div class="row justify-content-center ayudaFamilias">
@@ -209,4 +246,4 @@
         crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html> 

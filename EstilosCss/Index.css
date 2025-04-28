@@ -5,11 +5,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-/* estilos de navbar */
-
+/* Estilos de la navbar */
 .navbar {
-    background-color: rgb(159, 7, 186);
+    background-color: rgb(159, 7, 186);  /* Fondo morado para la barra de navegación */
     color: white;
     margin-right: 20px;
     font-size: 20px;
@@ -25,9 +23,42 @@
 }
 
 .navbar a:hover {
-    color: rgb(223, 164, 234);
+    color: rgb(223, 164, 234);  /* Color hover en los enlaces */
 }
 
+/* Estilo para el logo */
+.navbar .navbar-brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Fondo semi-transparente detrás del logo */
+.navbar .navbar-brand img {
+    max-height: 60px; 
+    width: auto;
+    transition: transform 0.3s ease; 
+}
+
+/* Fondo semi-transparente detrás del logo */
+.navbar .navbar-brand::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-radius: 5px;
+    z-index: -1; /* Mantener el fondo detrás del logo */
+}
+
+/* Efecto hover para el logo */
+.navbar .navbar-brand img:hover {
+    transform: scale(1.05);  /* Ligeramente más grande al pasar el mouse */
+}
+
+/* Slogan */
 .slogan span {
     color: black;
     font-size: 30px;
@@ -37,6 +68,7 @@
 .slogan {
     text-shadow: 2px 2px 2px rgb(25, 25, 26);
 }
+
 /* '++++++++++++++++++++++++++++++++++ Fin estilos de encabezado nabvar ++++++++++++++++++++++++++++++ */
 /* '++++++++++++++++++++++++++++++++++ inicio estilos de pie de pagina footer++++++++++++++++++++++++++++++ */
 .contenedorFooter {
@@ -89,6 +121,21 @@
     color: rgb(249, 243, 243);
 }
 
+.icono-redes {
+    font-size: 2.5rem; 
+    color: #9f07ba; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icono-redes:hover {
+    transform: scale(1.2); 
+    color: #ffffff; 
+}
+.redsocial1 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
 .informacion {
     font-family: Arial, Helvetica, sans-serif;
 }
