@@ -2,42 +2,57 @@
 <html lang="es">
 
 <head>
-    <!-- Vinculo con Google Analytic tag (gtag.js) -->
-  
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-74WS4X4NPE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-74WS4X4NPE');
-</script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-74WS4X4NPE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-74WS4X4NPE');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundesotec</title>
+
+    <!-- Bootstrap, íconos y estilos propios -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../EstilosCss/Index.css">
+
+    <!-- Estilos para navbar con scroll -->
+    <style>
+        .main-navbar {
+            background-color: transparent;
+            transition: background-color 0.4s ease, box-shadow 0.3s ease;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
+        .navbar-scrolled {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            padding-top: 80px;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- encabezado - barra de navegación  -->
-    <div class="container-fluid text-end inicioFundesotec">
-        <div class="row">
-            <div class="col-md-12">
-                <p class="font-weight-bold slogan">Fundesotec<span>|</span>Ayudanos a Ayudar</p>
-            </div>
-        </div>
-    </div>
-    <div class="scroll-indicator"></div>
-    <nav class="navbar navbar-expand-md navbar-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light main-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="Inicio.html">
-                <img src="../Img/LogoFundesotec.png" alt="Logo de Fundesotec"></a>
+                <img src="../Img/LogoFundesotec.png" alt="Logo de Fundesotec">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,17 +65,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" onclick="cargarContenido('Nosotros.html'); return cerrarMenu();">Nosotros</a>
                     </li>
-                    <!-- Aquí otros enlaces -->
+                    <!-- otros enlaces aquí -->
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Script para cerrar el menú en móviles -->
     <script>
         function cerrarMenu() {
             let navbarToggler = document.querySelector('.navbar-toggler');
             let navbarCollapse = document.querySelector('.navbar-collapse');
-
             if (navbarToggler && navbarCollapse.classList.contains('show')) {
                 navbarToggler.click();
             }
@@ -68,11 +83,12 @@
         }
     </script>
 
+    <!-- Contenido dinámico -->
     <section class="Contenido" id="contenido">
         <p id="loading-message">Cargando...</p>
-        <!-- Aquí se cargará el contenido dinámicamente -->
     </section>
 
+    <!-- Redes sociales y footer -->
     <section>
         <div class="container-fluid contRS">
             <div class="row justify-content-center ContenedorRedes">
@@ -85,7 +101,7 @@
                         </a>
                     </p>
                 </div>
-                <!-- Aquí otros enlaces de redes sociales -->
+                <!-- otras redes aquí -->
             </div>
         </div>
 
@@ -95,13 +111,14 @@
                     <h4 class="datosContactos">DIRECCIÓN</h4><br>
                     <p class="informacion"><i class="bi bi-geo-alt"></i> Valle de los Chillos, Juan Carlos La valle N9 - 461 y Nicolás Aguirre</p>
                     <h4 class="datosContactos">CORREO</h4><br>
-                    <p class="informacion"> <i class="bi bi-envelope"></i> fundesotec@outlook.com</p>
+                    <p class="informacion"><i class="bi bi-envelope"></i> fundesotec@outlook.com</p>
                 </div>
-                <!-- Aquí otros datos del pie de página -->
+                <!-- otros datos aquí -->
             </div>
         </div>
     </section>
 
+    <!-- Scripts -->
     <script src="../View/Index.js" defer></script>
     <script src="../View/Proyectos.js" defer></script>
     <script src="../View/Donaciones.js" defer></script>
@@ -109,6 +126,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!-- Script para cambiar la navbar al hacer scroll -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.main-navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>

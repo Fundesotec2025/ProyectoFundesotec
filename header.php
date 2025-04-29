@@ -31,11 +31,7 @@
 
 <body>
 
-    <!-- Barra superior con slogan -->
-    <div class="text-end inicioFundesotec">
-        <p class="font-weight-bold slogan">Fundesotec <span>|</span> Ayudanos a Ayudar</p>
-    </div>
-
+ 
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
@@ -70,7 +66,17 @@
             }
             return false;
         }
-    </script>
+
+    window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
+
 
 </body>
 

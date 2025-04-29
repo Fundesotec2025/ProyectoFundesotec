@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="EstilosCss/Index.css">
 
 <section>
+    <!-- Información de contacto y redes sociales -->
     <div class="container-fluid contRS">
         <div class="row justify-content-center ContenedorRedes">
             <h2 class="text-center font-weight-bold text-white mb-3">Información de contacto</h2>
@@ -36,6 +37,7 @@
         </div>
     </div>
 
+    <!-- Información de contacto: Dirección, correo, teléfonos y horarios -->
     <div class="container-fluid contenedorFooter">
         <div class="row">
             <!-- Dirección -->
@@ -48,6 +50,7 @@
                         Calle, Juan Carlos Lavalle N9-461, Quito 170803
                     </a>
                 </p>
+
                 <!-- Correo debajo de Dirección -->
                 <h4 class="datosContactos">CORREO</h4><br>
                 <p class="informacion">
@@ -112,8 +115,21 @@
                 <h2 class="politicas">© 2018 - 2025 <span>Fundesotec</span>. Todos los derechos reservados</h2>
             </div>
         </div>
-
     </div>
+ <!-- Barra de navegación tipo Footer -->
+<div class="secondary-footer brand-bg darken-2 text-center">
+    <div class="container">
+        <ul class="navbar-nav-footer">
+            <li><a class="nav-link-footer first-link" href="#top" class="page-scroll" data-section="#top">Inicio</a></li>
+            <li><a class="nav-link-footer" href="#nosotros" class="page-scroll" data-section="#nosotros">Nosotros</a></li>
+            <li><a class="nav-link-footer" href="#proyectos" class="page-scroll" data-section="#proyectos">Proyectos</a></li>
+            <li><a class="nav-link-footer"  href="index.php?page=Vista/Politicas.html"target="_blank">Políticas de privacidad</a></li>
+        </ul>
+    </div><!-- /.container -->
+</div><!-- /.secondary-footer -->
+</footer>
+
+
 </section>
 
 <!-- Scripts de Bootstrap -->

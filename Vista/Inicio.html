@@ -2,29 +2,35 @@
 <html lang="en">
 
 <head>
-      <!-- Vinculo con Google Analytic tag (gtag.js) -->
-  
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-74WS4X4NPE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-74WS4X4NPE');
-  </script>
+    <!-- Vinculo con Google Analytic tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-74WS4X4NPE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-74WS4X4NPE');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <!-- -------------------- -->
-    <!-- <link rel="stylesheet" href="../EstilosCss/Inicio.css"> -->
     <link rel="stylesheet" href="EstilosCss/Inicio.css">
+    <link rel="icon" href="../Img/Favicon.png" type="image/png">
 
 
+
+
+    
+    <style>
+        /* Estilo para las frases en cursiva */
+        #carousel-text {
+            font-style: italic;
+        }
+    </style>
 </head>
 
 <body>
     <section>
-        <!-- Carrusel de Bootstrap -->
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicadores del carrusel -->
             <div class="carousel-indicators">
@@ -41,12 +47,11 @@
                 <div class="carousel-item active">
                     <img src="Img/Inicio/Carrucel1.png" class="d-block w-100" alt="Imagen 1">
                     <div class="carousel-caption d-none d-md-block">
-                        <p><span>"</span>Empieza por una acción pequeña para <span>LOGRAR GRANDES CAMBIOS"</span></p>
+                        <p id="carousel-text">Tu donación hoy puede alimentar, educar y sanar a una familia mañana. ¡Hazla posible!</p>
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-12 col-md-5 mb-4">
-                                    <a href="index.php?page=Vista/Donaciones.html"><i class="bi bi-heart-fill"></i> Haz
-                                        una DONACIÓN</a>
+                                    <a href="index.php?page=Vista/Donaciones.html"><i class="bi bi-heart-fill"></i> Haz una DONACIÓN</a>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +61,7 @@
                 <div class="carousel-item">
                     <img src="Img/Inicio/carrucel2.png" class="d-block w-100" alt="Imagen 2">
                     <div class="carousel-caption d-none d-md-block">
-                        <p><span>"</span>Empieza por una acción pequeña para <span>LOGRAR GRANDES CAMBIOS"</span></p>
+                        <p id="carousel-text">Cada dólar cuenta. Cada kit entregado cambia una historia. ¡Haz tu donación hoy!</p>
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-12 col-md-5 mb-4">
@@ -70,7 +75,7 @@
                 <div class="carousel-item">
                     <img src="Img/Inicio/carrucel3.png" class="d-block w-100" alt="Imagen 3">
                     <div class="carousel-caption d-none d-md-block">
-                        <p><span>"</span>Empieza por una acción pequeña para <span>LOGRAR GRANDES CAMBIOS"</span></p>
+                        <p id="carousel-text">Tu donación hoy puede alimentar, educar y sanar a una familia mañana. ¡Hazla posible!</p>
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-12 col-md-5 mb-4">
@@ -92,14 +97,17 @@
                 <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
-    </section>
-    <!-- Contenedor de Fundesotec -->
+    </section> 
+
+   <!-- Contenedor de Fundesotec -->
 <div class="container-fluid contenedorFundesotec">
     <div class="row justify-content-center align-items-center">
         <div class="col-12 col-md-6 mb-4 text-center text-md-left">
             <h4>Desde 2018</h4>
-            <h1>Fundación Desarrollo Social y Tecnológico</h1>
-            <p>Somos una organización sin fines de lucro que brinda servicios de salud, educación, seguridad, alimentación y tecnología a personas vulnerables. Trabajamos en programas comunitarios para promover el desarrollo social, económico y cultural, fortaleciendo el tejido social. Nuestra misión es ofrecer servicios de calidad con calidez y dignidad, garantizando el bienestar de los grupos prioritarios. Aspiramos a ser un referente nacional para el 2027, consolidándonos como una fundación sostenible y creíble, enfocada en áreas rurales y en mejorar la calidad de vida con un enfoque humanista.</p>
+            <h1>La Fundación Desarrollo Social y Tecnológico (FUNDESOTEC) impulsa el desarrollo integral de comunidades vulnerables, con especial atención a las zonas rurales del Ecuador.</h1>
+            <p>
+                Somos una organización sin fines de lucro que diseña e implementa programas en áreas clave: salud, educación, alimentación, tecnología y protección social. Brindamos atención médica a bajo costo mediante nuestro consultorio médico y brigadas comunitarias de salud; entregamos kits alimenticios y gestionamos comedores solidarios para personas de escasos recursos y en situación de calle; promovemos el acceso al conocimiento a través de bibliotecas comunitarias; capacitamos en herramientas digitales y habilidades productivas; y acompañamos a mujeres, migrantes y poblaciones vulnerables en procesos de empoderamiento y resiliencia.
+            </p>
             <a href="index.php?page=Vista/Nosotros.html" class="btn btn-outline-primary">Conoce más sobre Fundesotec</a>
         </div>
 
@@ -124,6 +132,8 @@
         </div>
     </div>
 </div>
+
+    
 
 <!-- Sección de "Nuestra Labor en la Sociedad" -->
 <div class="container-fluid contenedorLabor">
@@ -244,6 +254,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        <script>
+            // Array con las frases
+            const carouselText = [
+                "Tu donación hoy puede alimentar, educar y sanar a una familia mañana. ¡Hazla posible!",
+                "Cada dólar cuenta. Cada kit entregado cambia una historia. ¡Haz tu donación hoy!",
+                "Tu donación hoy puede alimentar, educar y sanar a una familia mañana. ¡Hazla posible!"
+            ];
+    
+            const updateCarouselText = (e) => {
+                const activeIndex = e.to;
+                document.getElementById('carousel-text').textContent = carouselText[activeIndex];
+            }
+    
+            const carouselElement = document.getElementById('carouselExample');
+            carouselElement.addEventListener('slide.bs.carousel', updateCarouselText);
+        </script>
 </body>
 
 </html> 
