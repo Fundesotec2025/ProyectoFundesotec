@@ -7,70 +7,101 @@ h1, h4, p {
 
 /* --------------------------------------------- Carrusel ------------------------------------------------------- */
 .carousel-item {
-    position: relative; 
+    position: relative;
 }
 
 .carousel-item img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     max-height: 500px;
     object-fit: cover;
 }
 
 .carousel-caption {
-    position: absolute;  
-    top: 0;  
-    left: 0;  
-    width: 100%; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);  
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
-    justify-content: center;  
+    justify-content: center;
     align-items: center;
-    padding-top: 15%;  
-    border-radius: 12px;  
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);  
-}
-
-.carousel-inner p {
-    font-family: 'Poppins', sans-serif;  
-    font-weight: bold; 
-    font-size: 36px;  
-    line-height: 1.5; 
-    text-align: center;  
-    color: white; 
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);  
-    margin: 0 15px 20px;
-    animation: fadeInUp 1s ease-in-out;  
-}
-
-.carousel-inner p span {
-    font-size: 40px;  
-    color: #f707db; 
-    font-family: 'Montserrat', sans-serif; 
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); 
-}
-
-.carousel-inner a {
-    text-decoration: none;
-    padding: 18px 45px;  
-    border: solid 4px #df07db;  
-    color: #fff; 
-    font-weight: bold; 
-    border-radius: 50px; 
-    background-color: transparent; 
-    font-size: 18px;  
-    text-transform: uppercase;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 20px;
+    padding-top: 15%;
+    border-radius: 12px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.carousel-inner a:hover {
-    background-color: #df07db;  
-    color: #000;
-    transform: scale(1.1);
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.4);
+.carousel-inner p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin: 0 15px 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.carousel-inner p span {
+    font-size: 40px;
+    color: #f707db;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#carousel-text {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1.5px;
+    text-indent: 2em;
+    font-size: 2.5rem;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Botón de donación unificado - versión más estrecha */
+.btn-donacion {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; /* Espacio reducido entre imagen y texto */
+    padding: 2px 16px; /* Reducido el padding lateral */
+    background-color: #9f07ba;
+    color: white;
+    border: 3px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; /* Tamaño del texto equilibrado */
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    line-height: 1;
+}
+
+/* Hover */
+.btn-donacion:hover {
+    background-color: #ffffff;
+    color: #9f07ba;
+    border-color: #d6b3ff;
+}
+
+/* Imagen dentro del botón */
+.btn-donacion .imagen-donar {
+    width: 60px; /* Reducido el tamaño de la imagen para hacerlo más compacto */
+    height: 50px;
+    transition: filter 0.3s ease;
+    filter: brightness(0) invert(1);
+    object-fit: contain;
+    display: block;
+    margin: 0; /* Elimina márgenes adicionales */
+    padding: 0;
+}
+
+/* Hover de imagen */
+.btn-donacion:hover .imagen-donar {
+    filter: none;
 }
 
 @keyframes fadeInUp {
@@ -85,139 +116,147 @@ h1, h4, p {
 }
 
 /* --------------------------------------------- Contenedor Fundesotec ------------------------------------------------------- */
-
 .contenedorFundesotec {
-    padding: 5rem 2rem;
-    background: #fff;
-    color: #080808;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    font-family: 'Roboto', sans-serif;
+    padding: 60px 15px;
+    background-color: #fff;
+}
+
+.contenedorFundesotec h5 {
+    font-weight: 600;
+    font-size: 36px;
+    color: #3d3c3c;
+    margin-bottom: 5px;
+}
+
+.contenedorFundesotec h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #000;
 }
 
 .contenedorFundesotec p {
+    font-size: 25px;
+    line-height: 1.7;
+    color: #333;
     text-align: justify;
-    font-size: 1.125rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    font-family: 'Roboto', sans-serif;
+    margin-bottom: 25px;
 }
 
-.contenedorFundesotec h1,
-.contenedorFundesotec h4 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #000;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.contenedorFundesotec a {
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: none;
+.contenedorFundesotec .btn-outline-primary {
     color: #fff;
-    padding: 0.625rem 1.25rem;
-    background-color: rgb(159, 7, 186);
+    background-color: #800080;
+    border: none;
+    font-weight: 700;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     border-radius: 50px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background 0.3s ease;
 }
 
-.contenedorFundesotec a:hover {
-    background-color: #c883e4;
-    transform: translateY(-5px);
+.contenedorFundesotec .btn-outline-primary:hover {
+    background-color: #5a005a;
 }
 
-/* --------------------------------------------- Galería de Imágenes ------------------------------------------------------- */
-
+/* Imágenes */
 .image-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-@media (min-width: 768px) {
-    .image-grid {
-        grid-template-columns: 1fr 1fr;
+.image-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: #942767;
+    text-shadow: 1px 1px 4px #000;
+}
+
+.image-text p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.image-text .btn-light {
+    background-color: #800080;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 18px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.image-text .btn-light:hover {
+    background-color: #5a005a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedorFundesotec h1 {
+        font-size: 24px;
+    }
+
+    .contenedorFundesotec p {
+        text-align: center;
+    }
+
+    .image-text {
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+        text-align: center;
     }
 }
 
 .image-item {
     position: relative;
     overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.image-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-.image-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.image-text {
+.overlay-text {
     position: absolute;
-    bottom: 10px;
-    left: 15px;
-    right: 15px;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    transition: background-color 0.3s ease;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
 }
-
-.image-item:hover .image-text {
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.image-text p {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 0;
-    color: #fff;
-}
-
-.image-text a {
-    display: inline-block;
-    font-size: 1rem;
-    margin-top: 10px;
-    color: #fff;
-    text-decoration: none;
-    background-color: rgb(159, 7, 186);
-    padding: 0.5rem 1rem;
-    border-radius: 30px;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-}
-
-.image-text a:hover {
-    background-color: #272727;
-}
-
-/* --------------------------------------------- Botones Globales ------------------------------------------------------- */
-
-.btn-outline-primary {
-    font-weight: 600;
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #070707;
-    border: 2px solid #7e7e7e;
+.btn-morado {
+    background-color: #9f07ba;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 40px;
     transition: all 0.3s ease;
+    font-weight: 700;
 }
 
-.btn-outline-primary:hover {
-    background-color: #fff;
-    color: #111010;
-    transform: translateY(-5px);
+.btn-morado:hover {
+    background-color: #5a35a3;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* --------------------------------------------- Nuestra Labor en la Sociedad ------------------------------------------------------- */
@@ -230,9 +269,9 @@ h1, h4, p {
 
 .contenedorLabor h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 700;
-    color: #000000;
+    color: #9f07ba;
     text-align: center;
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -250,11 +289,11 @@ h1, h4, p {
 
 .icono-labor:hover {
     transform: scale(1.1);
-
 }
 
 .contenedorLabor p {
-    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
     font-weight: bold;
     margin-top: 20px;
     color: #555;
@@ -300,7 +339,7 @@ h1, h4, p {
 .contenedorLabor a:hover {
     background-color: #f0ad4e;
     transform: scale(1.1);
-    }
+}
 
 /* --------------------------------------------- ODS ------------------------------------------------------- */
 .contenedorODS {
@@ -312,242 +351,147 @@ h1, h4, p {
 
 .contenedorODS1 {
     background-color: rgb(171, 8, 171, 0.8);
-    padding: 30px 10px
+    padding: 30px 10px;
 }
 
 .contenedorODS img {
     margin: 2%;
     width: 80%;
     box-shadow: 20px 20px 20px #000;
-
 }
 
 .contenedorODS h2 {
     font-size: 50px;
-    color: #fff;
-    font-family: "Lobster", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #fffafa;
+    font-weight: 700;
 }
 
 .ContenedorImg img {
     width: 120%;
 }
-.ayudaFamilias img{
+
+.ayudaFamilias img {
     width: 100%;
     border-radius: 45px;
-
 }
+
 /* Responsive para ODS */
 @media (max-width: 768px) {
     .contenedorODS h2 {
-        font-size: 36px; 
+        font-size: 36px;
     }
 
     .overlay p {
         font-size: 20px;
-        padding: 8px 12px; 
+        padding: 8px 12px;
     }
 }
 
 @media (max-width: 576px) {
     .contenedorODS h2 {
-        font-size: 28px; 
+        font-size: 28px;
     }
 
     .overlay p {
-        font-size: 18px; 
-        padding: 6px 10px; 
+        font-size: 18px;
+        padding: 6px 10px;
     }
 
     .contenedorODS img {
-        width: 100%; 
+        width: 100%;
     }
 
     .image-container {
-        height: auto; 
+        height: auto;
     }
 }
 
+/* --------------------------------------------- AYUDA FAMILIAS ------------------------------------------------------- */
 
 /* Contenedor general */
-.container.contenedorFundesotec {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background-color: #f4f4f4;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-
 .ayudaFamilias {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1300px;
+    text-align: center;
 }
 
-
-.ayudaFamilias .col-md-6:first-child {
-    padding-right: 2rem;
-}
-
-
-.ayudaFamilias .col-md-6:last-child {
-    padding-left: 2rem;
-}
-
-
+/* Títulos */
 .ayudaFamilias h4 {
-    font-size: 1.6rem;
-    color: #000000;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #3d3c3c;
+    margin-bottom: 10px;
 }
 
 .ayudaFamilias h3 {
-    font-size: 2.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
     font-weight: 700;
-    color: #d400ff;
-    margin-bottom: 1rem;
+    color: #9f07ba;
+    margin-bottom: 30px;
 }
 
-.ayudaFamilias p {
-    font-size: 1.15rem;
-    color: #444;
-    line-height: 1.7;
-    margin-bottom: 1rem;
+/* Fila con texto a la izquierda e imagen a la derecha */
+.fila-donaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
 }
 
-/* Botón */
-.ayudaFamilias a {
-    display: inline-block;
-    margin-top: 1rem;
-    font-weight: 600;
-    color: #fff;
-    background-color: #9f07ba;;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    border-radius: 0.6rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+/* Texto justificado */
+.texto-donaciones {
+    flex: 1 1 60%;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.6;
 }
 
-.ayudaFamilias a:hover {
-    background-color: #f770e9;
+/* Imagen al lado derecho */
+.ContenedorImg {
+    flex: 1 1 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Imagen */
 .ContenedorImg img {
-    width: 100%;
+    width: 800px;
+    max-width: 100%;
     height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+/* Botón centrado */
+.contenedor-boton {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
 }
 
 /* --------------------------------------------- Responsive ------------------------------------------------------- */
 
-@media (max-width: 767px) {
-    .TextoEncimaDeLaImagen a {
-        padding: 6px 12px;
-        font-size: 10px;
-    }
-
-    .contenedorODS img {
-        width: 50%;
-    }
-}
-
 @media (max-width: 576px) {
-    .carousel-inner p {
-        font-size: 20px;
+    .ayudaFamilias h3 {
+        font-size: 30px;
     }
 
-    .carousel-inner p span {
-        font-size: 24px;
-    }
-
-    .carousel-inner a {
-        font-size: 14px;
-        padding: 12px 24px;
-    }
-
-    .image-text p {
-        font-size: 1rem;
-    }
-
-    .image-text a {
-        font-size: 0.875rem;
-        padding: 0.4rem 0.8rem;
-    }
-
-    .contenedorLabor .cantidad {
-        font-size: 40px;
-    }
-
-    .contenedorLabor p {
-        font-size: 18px;
-    }
-
-    .contenedorLabor h2 {
+    .ayudaFamilias h4 {
         font-size: 28px;
     }
 
-    .overlay p {
-        font-size: 16px;
-    }
-}
-
-
-/* --------------------------------------------- Responsive ------------------------------------------------------- */
-
-@media (max-width: 767px) {
-    .TextoEncimaDeLaImagen a {
-        padding: 6px 12px;
-        font-size: 10px;
+    .texto-donaciones {
+        font-size: 22px;
     }
 
-    .contenedorODS img {
-        width: 50%;
-    }
-}
-
-@media (max-width: 576px) {
-    .carousel-inner p {
-        font-size: 20px;
+    .ContenedorImg img {
+        width: 100%;
+        max-width: 100%;
     }
 
-    .carousel-inner p span {
-        font-size: 24px;
+    .fila-donaciones {
+        flex-direction: column;
     }
-
-    .carousel-inner a {
-        font-size: 14px;
-        padding: 12px 24px;
-    }
-
-    .image-text p {
-        font-size: 1rem;
-    }
-
-    .image-text a {
-        font-size: 0.875rem;
-        padding: 0.4rem 0.8rem;
-    }
-
-    .contenedorLabor .cantidad {
-        font-size: 40px;
-    }
-
-    .contenedorLabor p {
-        font-size: 18px;
-    }
-
-    .contenedorLabor h2 {
-        font-size: 28px;
-    }
-
-    .overlay p {
-        font-size: 16px;
-    }
-}
+} 

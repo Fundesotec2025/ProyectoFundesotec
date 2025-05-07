@@ -55,7 +55,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     z-index: -1;
 }
@@ -75,8 +75,32 @@
     text-shadow: 2px 2px 2px rgb(25, 25, 26);
 }
 
-/* ---------- FIN estilos de encabezado navbar ---------- */
+/* Ajuste del ícono */
+.logo-icon {
+    height: 50px;
+    width: auto;
+    image-rendering: auto;
+}
 
+/* Texto FUNDESOTEC */
+.logo-text {
+    font-size: 30px;
+    font-weight: 900;
+    color: #0d3b8c;
+    font-family: 'Arial Black', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Fondo suave opcional detrás de todo */
+.navbar .navbar-brand {
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ---------- FIN estilos de encabezado navbar ---------- */
 
 /* ++++++++++++++++++++++++++ inicio estilos de pie de pagina footer ++++++++++++++++++++++++++++++ */
 .contenedorFooter {
@@ -94,12 +118,13 @@
 
 .contDatos {
     margin-left: 100px;
+    padding-right: 15px; /* Ajuste para mejorar la visualización */
 }
 
 .ContenedorRedes {
     background-color: rgb(159, 7, 186);
-    padding-top: 30PX;
-    padding-bottom: 30PX;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .redsocial1 a {
@@ -179,12 +204,156 @@
 .secondary-footer .nav-link-footer {
     color: white; /* Color de texto */
     font-size: 20px; /* Tamaño de la fuente */
-   
- 
 }
 
 .secondary-footer .nav-link-footer:hover {
     color: rgb(3, 3, 3); /* Color al pasar el mouse */
     text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+footer, .contenedorFooter, .contRS, .navbar-nav-footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer .informacion,
+footer .datosContactos,
+footer .politicas,
+footer h2,
+footer h3,
+footer h4,
+footer a,
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+/* Espaciado uniforme */
+footer .contDatos {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+footer .horario-dias,
+footer .horario-horas {
+    text-align: center;
+    font-weight: bold;
+}
+.politicas span {
+    font-weight: bold;
+    color: #9f07ba; 
+}
+
+.fundesotec-text {
+    font-weight: bold;
+}
+
+.fundesotec-text .blue {
+    color: #002F86; 
+}
+
+.fundesotec-text .magenta {
+    color: #D000FF; 
+}
+
+@media (max-width: 768px) {
+    footer .contDatos {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    footer h2, footer h3, footer h4 {
+        font-size: 20px; /* Reducir el tamaño de los títulos en pantallas pequeñas */
+    }
+
+    .contRS {
+        padding-top: 10px;
+    }
+
+    .ContenedorRedes {
+        text-align: center;
+    }
+
+    .redsocial1 {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+    }
+
+    .redsocial1 i {
+        font-size: 2rem;
+    }
+
+    .contDatos {
+        margin-left: 0;
+        padding: 20px 0;
+    }
+
+    .custom-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    footer .politicas {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer .contDatos {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer .horario-dias, footer .horario-horas {
+        font-size: 14px;
+    }
+
+    .custom-btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    footer h2, footer h3, footer h4 {
+        font-size: 18px; /* Reducir aún más el tamaño de los títulos */
+    }
+
+    .icono-redes {
+        font-size: 2rem; /* Reducir el tamaño de los iconos */
+    }
+
+    footer .datosContactos {
+        font-size: 14px;
+    }
+
+    footer .informacion {
+        font-size: 14px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* Hace que la imagen sea responsiva */
+#logo {
+    max-width: 100%;      /* Ocupa el 100% del ancho del contenedor */
+    height: auto;         /* Mantiene la proporción */
+}
+
+/* Para pantallas grandes (computadoras) */
+@media (min-width: 992px) {
+    #logo {
+        max-width: 300px; /* El tamaño máximo del logo en pantallas grandes */
+    }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    #logo {
+        max-width: 250px; /* Ajusta el tamaño en tablets */
+    }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    #logo {
+        max-width: 200px; /* Ajusta aún más el tamaño en móviles */
+    }
 }
 

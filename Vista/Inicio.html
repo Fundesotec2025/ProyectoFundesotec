@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <!-- Vinculo con Google Analytic tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-74WS4X4NPE"></script>
@@ -8,25 +5,16 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-74WS4X4NPE');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="EstilosCss/Inicio.css">
-    <link rel="icon" href="../Img/Favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
 
-
-
-
-    
-    <style>
-        /* Estilo para las frases en cursiva */
-        #carousel-text {
-            font-style: italic;
-        }
-    </style>
 </head>
 
 <body>
@@ -41,51 +29,62 @@
                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <!-- Contenido del carrusel -->
-            <div class="carousel-inner">
-                <!-- Primera imagen -->
-                <div class="carousel-item active">
-                    <img src="Img/Inicio/Carrucel1.png" class="d-block w-100" alt="Imagen 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p id="carousel-text">Tu donación hoy puede alimentar, educar y sanar a una familia mañana. ¡Hazla posible!</p>
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-12 col-md-5 mb-4">
-                                    <a href="index.php?page=Vista/Donaciones.html"><i class="bi bi-heart-fill"></i> Haz una DONACIÓN</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Segunda imagen -->
-                <div class="carousel-item">
-                    <img src="Img/Inicio/carrucel2.png" class="d-block w-100" alt="Imagen 2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p id="carousel-text">Cada dólar cuenta. Cada kit entregado cambia una historia. ¡Haz tu donación hoy!</p>
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-12 col-md-5 mb-4">
-                                    <a href="index.php?page=Vista/Donaciones.html"><i class="bi bi-heart-fill"></i> Haz una DONACIÓN</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tercera imagen -->
-                <div class="carousel-item">
-                    <img src="Img/Inicio/carrucel3.png" class="d-block w-100" alt="Imagen 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p id="carousel-text">Tu donación hoy puede alimentar, educar y sanar a una familia mañana. ¡Hazla posible!</p>
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-12 col-md-5 mb-4">
-                                    <a href="index.php?page=Vista/Donaciones.html"><i class="bi bi-heart-fill"></i> Haz una DONACIÓN</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+           <!-- Contenido del carrusel -->
+<div class="carousel-inner">
+<!-- Primera imagen -->
+<div class="carousel-item active">
+    <img src="Img/Inicio/Carrucel1.png" class="d-block w-100" alt="Imagen 1">
+    <div class="carousel-caption d-none d-md-block">
+        <p id="carousel-text">Tu donación hoy puede alimentar, educar y sanar a una familia mañana. </p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-5 mb-4">
+                    <a href="index.php?page=Vista/Donaciones.html" class="btn-donacion">
+                        <img src="Img/Donar.png" alt="Donar" class="imagen-donar">
+                        Donar Ahora
+                    </a>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- Segunda imagen -->
+<div class="carousel-item">
+    <img src="Img/Inicio/carrucel2.png" class="d-block w-100" alt="Imagen 2">
+    <div class="carousel-caption d-none d-md-block">
+        <p id="carousel-text">Cada dólar cuenta. Cada kit entregado cambia una historia. </p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-5 mb-4">
+                    <a href="index.php?page=Vista/Donaciones.html" class="btn-donacion">
+                        <img src="Img/Donar.png" alt="Donar" class="imagen-donar">
+                        Donar Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tercera imagen -->
+<div class="carousel-item">
+    <img src="Img/Inicio/carrucel3.png" class="d-block w-100" alt="Imagen 3">
+    <div class="carousel-caption d-none d-md-block">
+        <p id="carousel-text">Tu donación hoy puede alimentar, educar y sanar a una familia mañana. </p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-5 mb-4">
+                    <a href="index.php?page=Vista/Donaciones.html" class="btn-donacion">
+                        <img src="Img/Donar.png" alt="Donar" class="imagen-donar">
+                        Donar Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
             <!-- Controles del carrusel -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -99,46 +98,61 @@
         </div>
     </section> 
 
-   <!-- Contenedor de Fundesotec -->
+<!-- Contenedor de Fundesotec -->
 <div class="container-fluid contenedorFundesotec">
+    <!-- Título y subtítulo centrados -->
+    <div class="row">
+        <div class="col-11 text-center mb-4">
+            <h5>Desde 2018</h5>
+            <h1>La Fundación Desarrollo Social y Tecnológico FUNDESOTEC impulsa el desarrollo integral de comunidades vulnerables.</h1>
+        </div>
+    </div>
+
     <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-md-6 mb-4 text-center text-md-left">
-            <h4>Desde 2018</h4>
-            <h1>La Fundación Desarrollo Social y Tecnológico (FUNDESOTEC) impulsa el desarrollo integral de comunidades vulnerables, con especial atención a las zonas rurales del Ecuador.</h1>
+        <!-- Texto a la izquierda -->
+        <div class="col-12 col-md-6 mb-4 text-md-left">
             <p>
                 Somos una organización sin fines de lucro que diseña e implementa programas en áreas clave: salud, educación, alimentación, tecnología y protección social. Brindamos atención médica a bajo costo mediante nuestro consultorio médico y brigadas comunitarias de salud; entregamos kits alimenticios y gestionamos comedores solidarios para personas de escasos recursos y en situación de calle; promovemos el acceso al conocimiento a través de bibliotecas comunitarias; capacitamos en herramientas digitales y habilidades productivas; y acompañamos a mujeres, migrantes y poblaciones vulnerables en procesos de empoderamiento y resiliencia.
             </p>
-            <a href="index.php?page=Vista/Nosotros.html" class="btn btn-outline-primary">Conoce más sobre Fundesotec</a>
         </div>
 
-        <!-- Columna de imágenes -->
-        <div class="col-12 col-md-6 mb-4">
-            <div class="image-grid">
-                <div class="image-item">
-                    <img src="Img/Inicio/TiendaSolidaria.png" alt="Tienda Solidaria" class="img-fluid">
-                    <div class="image-text">
-                        <p>Tienda Comedor Solidaria</p>
-                        <a href="index.php?page=Vista/Proyectos.html" class="btn btn-light">Conoce más</a>
-                    </div>
+        <!-- Columna de imágenes a la derecha -->
+        <div class="col-12 col-md-6 mb-4 d-flex justify-content-start flex-wrap">
+            <!-- Imagen 1 -->
+            <div class="image-item position-relative me-3 mb-3" style="max-width: 500px;">
+                <img src="Img/Inicio/TiendaSolidaria.png" alt="Tienda Solidaria" class="img-fluid">
+                <div class="overlay-text d-flex flex-column justify-content-center align-items-center text-center">
+                    <p class="text-white fw-bold mb-2">Tienda Comedor Solidaria</p>
+                    <a href="index.php?page=Vista/Proyectos.html" class="btn btn-morado">Conoce más</a>
                 </div>
-                <div class="image-item">
-                    <img src="Img/Inicio/ConsultorioMedicoFundesotec.png" alt="Consultorio Médico Fundesotec" class="img-fluid">
-                    <div class="image-text">
-                        <p>Consultorio Médico Fundesotec</p>
-                        <a href="index.php?page=Vista/Proyectos.html" class="btn btn-light">Conoce más</a>
-                    </div>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="image-item position-relative mb-3" style="max-width: 500px;">
+                <img src="Img/Inicio/ConsultorioMedicoFundesotec.png" alt="Consultorio Médico Fundesotec" class="img-fluid">
+                <div class="overlay-text d-flex flex-column justify-content-center align-items-center text-center">
+                    <p class="text-white fw-bold mb-2">Consultorio Médico Fundesotec</p>
+                    <a href="index.php?page=Vista/Proyectos.html" class="btn btn-morado">Conoce más</a>
                 </div>
-            </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón centrado debajo de todo -->
+    <div class="row">
+        <div class="col-12 text-center mb-4">
+            <a href="index.php?page=Vista/Nosotros.html" class="btn btn-morado" >Conoce más sobre Fundesotec</a>
         </div>
     </div>
 </div>
 
-    
 
+ 
 <!-- Sección de "Nuestra Labor en la Sociedad" -->
 <div class="container-fluid contenedorLabor">
     <div class="row justify-content-center">
-        <h2 class="text-center fw-bold">NUESTRA LABOR EN LA SOCIEDAD</h2>
+        <h2 class="text-center fw-bold titulo-morado">NUESTRA LABOR EN LA SOCIEDAD</h2>
+
         <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
             <img class="img-fluid icono-labor" src="Img/Inicio/kistsAlimenticias.png" alt="KIST ALIMENTICIOS ENTREGADOS">
             <p>KIST ALIMENTICIOS <br>ENTREGADOS</p>
@@ -165,7 +179,7 @@
 <!----------------------------------------------------------------- LAS ODS  --------------------------------------------------->
 <div class="container-fluid contenedorODS">
     <div class="row justify-content-center contenedorODS1">
-        <h2 class="text-center">Comprometidos con los ODS</h2>
+        <h2 class="text-center">COMPROMETIDOS CON LOS ODS</h2>
         
         <!-- Contenedor de imágenes con texto al hacer hover -->
         <div class="col-12 col-sm-6 col-md-3 text-center">
@@ -230,27 +244,38 @@
 </div>
 
 
-    <div class="container contenedorFundesotec">
-        <div class="row justify-content-center ayudaFamilias">
-            <div class="col-12 col-md-6 mb-4">
-                <h4>¡Cada aporte transforma vidas!</h4>
-                <h3>AYUDA A MILES DE FAMILIAS ECUATORIANAS</h3>
-                <p>Únete a Fundesotec para cambiar el futuro de niños, niñas, adolescentes y familias en situación de
-                    vulnerabilidad en Ecuador. Con tu apoyo, podemos brindar acceso a educación, salud, alimentación y
-                    tecnología, construyendo un camino hacia un desarrollo sostenible y una mejor calidad de vida.
-                    <br>
-                    Tu donación hoy es esperanza para quienes más lo necesitan.
-                </p>
-                <p>¡Dona ahora y sé parte del cambio!</p><br>
-                <a href="index.php?page=Vista/Donaciones.html"> <i class="bi bi-heart-fill"></i> Donar Ahora</a><br>
-            </div>
-            <div class="col-12 col-md-6 mb-4">
-                <div class="ContenedorImg">
-                    <img src="Img/Inicio/AyudaSocialDonaciones.png" alt="Tienda Solidaria">
-                </div>
-            </div>
+    
+
+<div class="container contenedorFundesotec">
+    <div class="ayudaFamilias">
+      <h4>¡Cada aporte transforma vidas!</h4>
+      <h3>AYUDA A MILES DE FAMILIAS ECUATORIANAS</h3>
+  
+      <div class="fila-donaciones">
+        <div class="texto-donaciones">
+          <p>
+            Únete a Fundesotec para cambiar el futuro de niños, niñas, adolescentes y familias en situación de
+            vulnerabilidad en Ecuador. Con tu apoyo, podemos brindar acceso a educación, salud, alimentación y
+            tecnología, construyendo un camino hacia un desarrollo sostenible y una mejor calidad de vida.
+          </p>
+          <p>¡Dona ahora y sé parte del cambio!</p>
         </div>
+  
+        <div class="ContenedorImg">
+          <img src="Img/Inicio/AyudaSocialDonaciones.png" alt="Tienda Solidaria">
+        </div>
+      </div>
+      <div class="col-12 col-md-5 mb-4">
+        <a href="index.php?page=Vista/Donaciones.html" class="btn-donacion">
+            <img src="Img/Donar.png" alt="Donar" class="imagen-donar">
+            Donar Ahora
+        </a>
     </div>
+    
+    </div>
+  </div>
+  
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
