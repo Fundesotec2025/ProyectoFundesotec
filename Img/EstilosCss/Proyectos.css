@@ -1,0 +1,297 @@
+/* estilos de proyectos  */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+}
+
+.ConProyectos .nuestrosProyectos {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(159, 7, 186);
+}
+
+.contProyectos {
+    /* background-color: rgba(71, 69, 71, 0.8); */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* estilos de inicio nosotros  */
+.inicioProyectos {
+    position: relative;
+    background-image: url(../Img/Proyectos/InicioNosotros.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.full-width {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 15%;
+    background-color: rgb(14, 14, 14, 0.5);
+
+}
+
+.inicioProyectos p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.inicioProyectos p span {
+    font-size: 35px;
+    color: #f707db;
+}
+
+.inicioProyectos a {
+    text-decoration: none;
+    padding: 20px 30px;
+    border: solid 5px #df07db;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 35px;
+}
+
+.inicioProyectos a:hover {
+    background-color: #df07db;
+}
+
+/* fin  estilos de inicio nosotros  */
+.proyectos h5 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #141414;
+}
+
+.proyectos p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #0c0c0c;
+}
+
+.proyectos a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border: solid 3px rgb(159, 7, 186);
+    background-color: rgb(159, 7, 186);
+    padding: 8px 40px;
+    border-radius: 35px;
+    margin-bottom: 15px;
+}
+
+.proyectos a:hover {
+    background-color: rgb(213, 67, 239);
+    border: solid 3px rgb(213, 67, 239);
+    color: white;
+}
+
+.proyectos .card-img-top {
+    width: 100%;
+    height: 340px;
+    /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+
+}
+
+
+/*------------------------------------------------- contendor de proyectos pdf  */
+.convenios {
+    padding-top: 4%;
+}
+
+.contenedorProyectos h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+.contenedorProyectos h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.buttonProyectos button {
+    position: relative;
+    /* Permite posicionar el icono dentro del botón */
+    padding-right: 30px;
+    /* Añade espacio para que el ícono no quede pegado al texto */
+}
+
+.buttonProyectos button i {
+    position: absolute;
+    right: 10px;
+    /* Mueve el ícono a la derecha */
+}
+
+
+/* estilos de convenios */
+.row button {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgb(159, 7, 186);
+    border: solid 2px rgb(159, 7, 186);
+    border-radius: 35px;
+}
+
+.row button:hover {
+    background-color: rgb(159, 7, 186);
+    color: #fff;
+}
+
+#btnConvenio,
+#btnInformeAnual,
+#btnestadosFinancieros,
+#btnNotasestadosFinancieros,
+#btnPlanOperativo,
+#btnAuditorIndependiente,
+#btnNombramientoDirector,
+#btnEstatutoFundacion,
+#btnLeyEconomiaSocial,
+#btnAcuerdioMinisterial,
+#btnCodigoEtica,
+#btnManuales,
+#btnReglamentoInterno,
+#btnRuc,
+#btnSUIOS {
+    padding: 10px 40px;
+    padding: 10px;
+    margin: 10px auto;
+    /* Margen vertical de 10px y centrado horizontal */
+    width: 600px;
+    text-align: left;
+}
+
+#convenios a,
+#informeAnual a,
+#estadosFinancieros a,
+#NotasEstadosFinancieros a,
+#planOperativo a,
+#AuditorIndependiente a,
+#NombramientoDirector a,
+.contenedorProyectos a {
+    display: block;
+    text-decoration: none;
+    color: rgb(159, 7, 186);
+    font-weight: bold;
+    border: 3px solid rgb(159, 7, 186);
+    border-radius: 35px;
+    padding: 10px;
+    margin: 10px auto;
+    /* Margen vertical de 10px y centrado horizontal */
+    text-align: center;
+    width: 400px;
+    /* Ancho fijo para cada enlace */
+}
+
+#convenios a:hover,
+#informeAnual a:hover,
+#estadosFinancieros a:hover,
+#NotasEstadosFinancieros a:hover,
+#planOperativo a:hover,
+#AuditorIndependiente a:hover,
+#NombramientoDirector a:hover,
+.contenedorProyectos a:hover {
+    color: #fff;
+    background-color: rgb(159, 7, 186);
+}
+
+/* ----------------------------------------------------------para pantallas pequenias  */
+@media (max-width: 767px) {
+
+    #btnConvenio,
+    #btnInformeAnual,
+    #btnestadosFinancieros,
+    #btnNotasestadosFinancieros,
+    #btnPlanOperativo,
+    #btnAuditorIndependiente,
+    #btnNombramientoDirector,
+    #btnEstatutoFundacion,
+    #btnLeyEconomiaSocial,
+    #btnAcuerdioMinisterial,
+    #btnCodigoEtica,
+    #btnManuales,
+    #btnReglamentoInterno #btnRuc,
+    #btnSUIOS {
+
+        width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+
+    .ConProyectos .nuestrosProyectos {
+        font-size: 36px;
+    }
+
+    .inicioProyectos p {
+        font-size: 24px;
+    }
+
+    .inicioProyectos p span {
+        font-size: 28px;
+    }
+
+    #btnConvenio,
+    #btnInformeAnual,
+    #btnestadosFinancieros,
+    #btnNotasestadosFinancieros,
+    #btnPlanOperativo,
+    #btnAuditorIndependiente,
+    #btnNombramientoDirector,
+    #btnEstatutoFundacion,
+    #btnLeyEconomiaSocial,
+    #btnAcuerdioMinisterial,
+    #btnCodigoEtica,
+    #btnManuales,
+    #btnReglamentoInterno,
+    #btnRuc,
+    #btnSUIOS {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .contenedorProyectos a {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .proyectos .card-img-top {
+        height: auto;
+        max-height: 250px;
+    }
+
+    .proyectos p {
+        font-size: 16px;
+    }
+
+    .proyectos h5 {
+        font-size: 18px;
+    }
+
+    .row button {
+        width: 90%;
+        max-width: 400px;
+    }
+}

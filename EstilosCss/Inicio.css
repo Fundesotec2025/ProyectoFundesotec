@@ -138,7 +138,7 @@ h1, h4, p {
 }
 
 .contenedorFundesotec p {
-    font-size: 25px;
+    font-size: 18px;
     line-height: 1.7;
     color: #333;
     text-align: justify;
@@ -254,10 +254,27 @@ h1, h4, p {
 }
 
 .btn-morado:hover {
-    background-color: #5a35a3;
-    color: #ffffff;
+    background-color: #d8d6db;
+    color:  #9f07ba;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+/* Justifica el texto */
+.contenedorFundesotec p {
+    text-align: justify;
+  }
+  
+  /* Espacio entre imágenes */
+  .image-item {
+    flex: 1 1 48%; /* Ocupa casi la mitad y permite envoltura si es necesario */
+    max-width: 48%;
+  }
+  
+  /* Mejora la distribución horizontal */
+  .col-12.col-md-6.d-flex {
+    gap: 1rem;
+  }
+  
 
 /* --------------------------------------------- Nuestra Labor en la Sociedad ------------------------------------------------------- */
 
@@ -340,6 +357,16 @@ h1, h4, p {
     background-color: #f0ad4e;
     transform: scale(1.1);
 }
+/* Establece altura mínima uniforme para el texto arriba del número */
+.label-text {
+    min-height: 80px; /* Ajusta según la cantidad de líneas */
+}
+
+/* Asegura que las columnas se mantengan del mismo alto */
+.contenedorLabor .col-md-3 {
+    display: flex;
+}
+
 
 /* --------------------------------------------- ODS ------------------------------------------------------- */
 .contenedorODS {
@@ -448,6 +475,7 @@ h1, h4, p {
     font-size: 30px;
     color: #333;
     line-height: 1.6;
+    
 }
 
 /* Imagen al lado derecho */

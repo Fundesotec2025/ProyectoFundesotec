@@ -1,0 +1,179 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+}
+
+/* Asegúrate de que no haya estilos que limiten el ancho */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+/* estilos de inicio nosotros  */
+.inicioContactos1 {
+    position: relative;
+    background-image: url(../Img/Contactos/inicioContactos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.full-width {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 15%;
+    background-color: rgb(14, 14, 14, 0.5);
+
+}
+
+.inicioContactos1 p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.inicioContactos1 p span {
+    font-size: 35px;
+    color: #f707db;
+}
+
+.inicioContactos1 a {
+    text-decoration: none;
+    padding: 20px 30px;
+    border: solid 5px #df07db;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 35px;
+}
+
+.inicioContactos1 a:hover {
+    background-color: #df07db;
+}
+
+/* fin  estilos de inicio nosotros  */
+.contenedorFormulario {
+    margin-bottom: 5%;
+    border: 1px solid brown;
+}
+
+.inicioContactos p {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: #7a39a0;
+}
+
+/* estilos de formulario */
+#formContactos {
+    border: solid 2px #7a39a0;
+    margin-top: 2%;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
+.contenedorContactos {
+    margin: 1%;
+}
+
+.contenedorContactos h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contenedorContactos h3 {
+    font-weight: bold;
+}
+
+.contenedorContactos p {
+    text-align: justify;
+}
+
+.contenedorContactos button {
+    background-color: rgb(120, 3, 116);
+    color: white;
+    font-weight: bold;
+}
+
+.contenedorContactos button:hover {
+    background-color: rgb(243, 58, 236);
+    color: white;
+    font-weight: bold;
+}
+
+/* estlos de select  */
+
+/* estilos de la ubicacion  */
+
+
+.contAlbergue {
+    background-image: url(../Img/Contactos/NinosFundesotec.png);
+}
+
+.contAlbergue1 {
+    background-color: rgba(153, 8, 131, 0.9);
+
+}
+
+.contMatriz {
+    background-image: url(../Img/Contactos/NiñosEscuela.png);
+}
+
+.contMatriz1 {
+    background-color: rgb(138, 43, 226, 0.9);
+}
+
+.contAlbergue iframe,
+.contMatriz iframe {
+    margin-top: 20px;
+}
+
+.contAlbergue h3,
+.contMatriz h3 {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.contAlbergue p,
+.contMatriz p {
+    text-align: justify;
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .inicioContactos1 p {
+        font-size: 20px;
+    }
+
+    .inicioContactos1 p span {
+        font-size: 24px;
+    }
+
+    .contenedorContactos h2, .contenedorContactos h3 {
+        font-size: 24px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
