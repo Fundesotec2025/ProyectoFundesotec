@@ -42,29 +42,71 @@
 }
 
 .inicioProyectos p {
+    font-family: 'Lobster', cursive;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2.5rem; 
+    letter-spacing: 1.5px;
+    text-indent: 2em;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-style: italic;
 }
 
-.inicioProyectos p span {
-    font-size: 35px;
-    color: #f707db;
-}
 
-.inicioProyectos a {
+
+/* ------------------------------------------------------------- Botón Donación ------------------------------------------------------------- */
+.btn-donacion {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 2px 16px;
+    background-color: #9f07ba;
+    color: white;
+    border: 3px solid white;
+    border-radius: 50px;
     text-decoration: none;
-    padding: 20px 30px;
-    border: solid 5px #df07db;
-    color: #fff;
     font-weight: bold;
-    border-radius: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    line-height: 1;
 }
 
-.inicioProyectos a:hover {
-    background-color: #df07db;
+.btn-donacion:hover {
+    background-color: #ffffff;
+    color: #9f07ba;
+    border-color: #d6b3ff;
 }
 
+.btn-donacion .imagen-donar {
+    width: 60px;
+    height: 50px;
+    transition: filter 0.3s ease;
+    filter: brightness(0) invert(1);
+    object-fit: contain;
+}
+
+.btn-donacion:hover .imagen-donar {
+    filter: none;
+}
+/*-------------------------------------------------------------------------------------------------*/
 /* fin  estilos de inicio nosotros  */
+
+.titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #9f07ba;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
 .proyectos h5 {
     text-align: center;
     font-weight: bold;
@@ -76,10 +118,11 @@
 }
 
 .proyectos p {
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    color: #0c0c0c;
+    line-height: 1.7;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 25px;
 }
 
 .proyectos a {
