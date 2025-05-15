@@ -30,28 +30,57 @@
 }
 
 .inicioNoticias p {
+    font-family: 'Lobster', cursive;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2.5rem; 
+    letter-spacing: 1.5px;
+    text-indent: 2em;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-style: italic;
 }
 
-.inicioNoticias p span {
-    font-size: 35px;
-    color: #f707db;
-}
 
-.inicioNoticias a {
+
+
+
+/* ------------------------------------------------------------- Botón Donación ------------------------------------------------------------- */
+.btn-donacion {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 2px 16px;
+    background-color: #9f07ba;
+    color: white;
+    border: 3px solid white;
+    border-radius: 50px;
     text-decoration: none;
-    padding: 20px 30px;
-    border: solid 5px #df07db;
-    color: #fff;
     font-weight: bold;
-    border-radius: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    line-height: 1;
 }
 
-.inicioNoticias a:hover {
-    background-color: #df07db;
+.btn-donacion:hover {
+    background-color: #ffffff;
+    color: #9f07ba;
+    border-color: #d6b3ff;
 }
 
+.btn-donacion .imagen-donar {
+    width: 60px;
+    height: 50px;
+    transition: filter 0.3s ease;
+    filter: brightness(0) invert(1);
+    object-fit: contain;
+}
+
+.btn-donacion:hover .imagen-donar {
+    filter: none;
+}
 /* fin  estilos de inicio nosotros  */
 .NoticiasInicio {
     font-weight: bold;
@@ -61,11 +90,14 @@
 }
 
 .NoticiasInicio h2 {
-    font-family: "Lobster", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-size: 50px;
-    color: #7a39a0;
+    font-weight: 700;
+    color: #9f07ba;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* estilos de la palabra RECID */
@@ -86,8 +118,11 @@
 }
 
 .contenedorNoticias h3 {
-    font-weight: bold;
-    text-align: center;
+      font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #3d3c3c;
+    margin-bottom: 10px;
 }
 
 .contenedorNoticias p {

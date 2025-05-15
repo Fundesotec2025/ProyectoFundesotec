@@ -204,6 +204,7 @@
 #btnestadosFinancieros,
 #btnNotasestadosFinancieros,
 #btnPlanOperativo,
+#btnPlanEstrategico,
 #btnAuditorIndependiente,
 #btnNombramientoDirector,
 #btnEstatutoFundacion,
@@ -272,69 +273,9 @@
     #btnCodigoEtica,
     #btnManuales,
     #btnReglamentoInterno #btnRuc,
-    #btnSUIOS {
+    #btnSUIOS,
+    #btnPlanEstrategico {
 
         width: 500px;
-    }
-}
-
-@media (max-width: 767px) {
-    .hero {
-        height: auto;
-        padding: 20px;
-    }
-
-    .ConProyectos .nuestrosProyectos {
-        font-size: 36px;
-    }
-
-    .inicioProyectos p {
-        font-size: 24px;
-    }
-
-    .inicioProyectos p span {
-        font-size: 28px;
-    }
-
-    #btnConvenio,
-    #btnInformeAnual,
-    #btnestadosFinancieros,
-    #btnNotasestadosFinancieros,
-    #btnPlanOperativo,
-    #btnAuditorIndependiente,
-    #btnNombramientoDirector,
-    #btnEstatutoFundacion,
-    #btnLeyEconomiaSocial,
-    #btnAcuerdioMinisterial,
-    #btnCodigoEtica,
-    #btnManuales,
-    #btnReglamentoInterno,
-    #btnRuc,
-    #btnSUIOS {
-        width: 90%;
-        max-width: 500px;
-    }
-
-    .contenedorProyectos a {
-        width: 90%;
-        max-width: 400px;
-    }
-
-    .proyectos .card-img-top {
-        height: auto;
-        max-height: 250px;
-    }
-
-    .proyectos p {
-        font-size: 16px;
-    }
-
-    .proyectos h5 {
-        font-size: 18px;
-    }
-
-    .row button {
-        width: 90%;
-        max-width: 400px;
     }
 }

@@ -289,8 +289,8 @@ h1 {
 }
 
 .icon-area img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
 }
 
@@ -320,25 +320,21 @@ p {
     margin-bottom: 10px;
 }
 
-ul {
-    padding-left: 20px;
-    margin: 0;
-}
-
-li {
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #444;
-}
 
 /* Colores de cada fin institucional */
-.fin-agricultura { background-color: #e6ffe6; }
-.fin-desarrollo { background-color: #e6ffe6; }
-.fin-educacion { background-color: #e6e6ff; }
-.fin-alimentaria { background-color: #fff2e6; }
-.fin-salud { background-color: #e6f7ff; }
-.fin-emprendimientos { background-color: #ffe6f2; }
+.fin-agricultura {
+    background-color: #d8f8d8; 
+    width: 100%;            
+    grid-column: 1 / -1;      
+}
+
+.fin-desarrollo { background-color: #dcfcdc; }
+.fin-educacion { background-color: #d9d9fa; }
+.fin-alimentaria { background-color: #f7e6d6; }
+.fin-salud { background-color: #d7effa; }
+.fin-emprendimientos { background-color: #f5d5e4; }
 .fin-tecnologia { background-color: #f2e6ff; }
+
 
 /* ------------------------------------------------------------- Dr. Porfirio Jiménez ------------------------------------------------------------- */
 .contDrPorfilioJ {
@@ -416,3 +412,4 @@ li {
         padding: 20px 10px;
     }
 }
+
