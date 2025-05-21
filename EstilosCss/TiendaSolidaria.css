@@ -1,0 +1,190 @@
+:root {
+    --principal: #9c27b0;
+    --secundario: #ba68c8;
+    --claro: #f3e5f5;
+    --gris: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Encabezado */
+.header {
+    background: linear-gradient(135deg, var(--principal), var(--secundario));
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Contenedor general */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Secciones generales */
+.hero-section,
+.services-section,
+.contact-section {
+    background: white;
+    margin: 2rem 0;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Títulos */
+.hero-section h2,
+.services-section h3,
+.contact-section h3,
+.impact-section h3 {
+    color: var(--principal);
+}
+
+/* Párrafos */
+.hero-section p,
+.impact-text,
+.service-item p,
+.contact-item p {
+    color: var(--gris);
+}
+
+/* Destacado */
+.discount-highlight {
+    background: linear-gradient(45deg, #ff6b35, #f9844a);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255,107,53,0.3);
+}
+
+/* Tarjetas estadísticas */
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--principal);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--principal);
+}
+
+/* Servicios */
+.service-item {
+    background: var(--claro);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 4px solid var(--secundario);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.service-item h4 {
+    color: var(--principal);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* Impacto */
+.impact-section {
+    background: linear-gradient(135deg, var(--principal), var(--secundario));
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.impact-text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.95;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--secundario), var(--principal));
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1rem 0.5rem;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(156,39,176,0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
