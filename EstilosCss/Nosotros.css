@@ -16,19 +16,28 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding-top: 15%;
+    /* elimina padding-top para evitar desplazamiento */
+    padding: 0;
     background-color: rgba(14, 14, 14, 0.5);
+
+    display: flex;             /* convierte en flex container */
+    justify-content: center;   /* centra horizontal */
+    align-items: center;       /* centra vertical */
+    text-align: center;        /* para que el texto interno se centre */
+    padding: 20px;             /* algo de padding para que no toque bordes */
 }
 
 .inicioNosotros p {
     font-family: 'Lobster', cursive;
     font-weight: bold;
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     letter-spacing: 1.5px;
-    text-indent: 2em;
+    text-indent: 0;           /* elimina sangría para que no rompa el centrado */
     line-height: 1.6;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     font-style: italic;
+    max-width: 800px;  
+    white-space: nowrap;
 }
 
 /* ------------------------------------------------------------- Botón Donación ------------------------------------------------------------- */
@@ -294,7 +303,7 @@ h1 {
     object-fit: contain;
 }
 
-h2 {
+h2.subtitulo {
     text-align: center;
     font-size: 22px;
     color: #333;

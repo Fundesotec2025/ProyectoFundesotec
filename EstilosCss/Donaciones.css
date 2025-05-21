@@ -39,14 +39,16 @@
 }
 
 .inicioDonaciones p {
-     font-family: 'Lobster', cursive;
+       font-family: 'Lobster', cursive;
     font-weight: bold;
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     letter-spacing: 1.5px;
-    text-indent: 2em;
+    text-indent: 0;           /* elimina sangría para que no rompa el centrado */
     line-height: 1.6;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     font-style: italic;
+    max-width: 800px;  
+    white-space: nowrap;
 }
 
 /* ------------------------------------------------------------- Botón Donación ------------------------------------------------------------- */
@@ -379,4 +381,22 @@ button[type="submit"]:hover {
     button[type="submit"] {
         font-size: 14px;
     }
+}
+
+
+.btn-morado {
+    background-color: #9f07ba;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+
+.btn-morado:hover {
+    background-color: #d8d6db;
+    color:  #9f07ba;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }

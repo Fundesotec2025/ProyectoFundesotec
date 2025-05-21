@@ -82,13 +82,7 @@
                     </a>
                 </p>
 
-                <p class="fw-bold">Consultorio Médico</p>
-                <p class="informacion">
-                    <i class="bi bi-telephone-forward"></i>
-                    <a href="https://wa.me/593986317387?text=Hola,%20quisiera%20información%20por%20favor" target="_blank">
-                        +593 98 631 7387
-                    </a>
-                </p>
+                
             </div>
 
             <!-- Horarios -->
@@ -125,7 +119,7 @@
             <div class="col text-center">
                 <h2>© 2018 - 2025 
                     <span class="fundesotec-text">
-                        <span class="blue">FUND</span><span class="magenta">E</span><span class="blue">SOTEC</span>
+                        <span class="blue">FUN</span><span class="magenta">D</span><span class="blue">ESOTEC</span>
                     </span>. Todos los derechos reservados
                 </h2>
             </div>

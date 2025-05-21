@@ -357,3 +357,21 @@ footer .horario-horas {
     }
 }
 
+.btn-donacion {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; /* Espacio reducido entre imagen y texto */
+    padding: 2px 16px; /* Reducido el padding lateral */
+    background-color: #9f07ba;
+    color: white;
+    border: 3px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; /* Tamaño del texto equilibrado */
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    line-height: 1;
+}

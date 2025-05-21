@@ -18,18 +18,9 @@ p {
   margin-bottom: 25px;
 }
 
-h2 {
+h2.subtitulo {
   color: #9f07ba;
   margin-top: 1.5em;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-a {
-  color: #9f07ba;
-  text-decoration: none;
 }
 
 a:hover {

@@ -138,6 +138,7 @@ h1, h4, p {
 }
 
 .contenedorFundesotec p {
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 1.7;
     color: #333;
