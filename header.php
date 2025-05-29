@@ -19,6 +19,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+      <!---FDST SCRIP DE PROMOCION--->
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17083550466">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-17083550466');
+    </script>
+     <!-- Event snippet for Vista de pÃ¡gina conversion page -->
+     <script>
+       gtag('event', 'conversion', {'send_to': 'AW-17083550466/6KTtCI-X38waEIKWidI_'});
+     </script>
 
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -59,7 +75,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.php?page=Vista/Inicio.html" onclick="cerrarMenu()">INICIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.php?page=Vista/Nosotros.html" onclick="cerrarMenu()">NOSOSTROS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php?page=Vista/Nosotros.html" onclick="cerrarMenu()">NOSOTROS</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.php?page=Vista/Proyectos.html" onclick="cerrarMenu()">PROYECTOS</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.php?page=Vista/Donaciones.html" onclick="cerrarMenu()">DONACIONES</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.php?page=Vista/Noticias.html" onclick="cerrarMenu()">NOTICIAS</a></li>
