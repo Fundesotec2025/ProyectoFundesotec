@@ -17,7 +17,6 @@
 }
 
 .contProyectos {
-    /* background-color: rgba(71, 69, 71, 0.8); */
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -38,24 +37,20 @@
     bottom: 0;
     padding-top: 15%;
     background-color: rgb(14, 14, 14, 0.5);
-
 }
 
 .inicioProyectos p {
-     font-family: 'Lobster', cursive;
+    font-family: 'Lobster', cursive;
     font-weight: bold;
     font-size: 2.5rem;
     letter-spacing: 1.5px;
-    text-indent: 0;           /* elimina sangría para que no rompa el centrado */
+    text-indent: 0;
     line-height: 1.6;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     font-style: italic;
-    max-width: 800px;  
+    max-width: 800px;
     white-space: nowrap;
-
 }
-
-
 
 /* ------------------------------------------------------------- Botón Donación ------------------------------------------------------------- */
 .btn-donacion {
@@ -94,6 +89,7 @@
 .btn-donacion:hover .imagen-donar {
     filter: none;
 }
+
 /*-------------------------------------------------------------------------------------------------*/
 /* fin  estilos de inicio nosotros  */
 
@@ -107,8 +103,6 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
-
 
 .proyectos h5 {
     text-align: center;
@@ -150,11 +144,8 @@
 .proyectos .card-img-top {
     width: 100%;
     height: 340px;
-    /* Ajusta la altura según tus necesidades */
     object-fit: cover;
-
 }
-
 
 /*------------------------------------------------- contendor de proyectos pdf  */
 .convenios {
@@ -165,7 +156,6 @@
     text-align: center;
     margin-top: 10px;
     font-weight: bold;
-
 }
 
 .contenedorProyectos h4 {
@@ -175,17 +165,13 @@
 
 .buttonProyectos button {
     position: relative;
-    /* Permite posicionar el icono dentro del botón */
     padding-right: 30px;
-    /* Añade espacio para que el ícono no quede pegado al texto */
 }
 
 .buttonProyectos button i {
     position: absolute;
     right: 10px;
-    /* Mueve el ícono a la derecha */
 }
-
 
 /* estilos de convenios */
 .row button {
@@ -221,7 +207,6 @@
     padding: 10px 40px;
     padding: 10px;
     margin: 10px auto;
-    /* Margen vertical de 10px y centrado horizontal */
     width: 600px;
     text-align: left;
 }
@@ -242,10 +227,8 @@
     border-radius: 35px;
     padding: 10px;
     margin: 10px auto;
-    /* Margen vertical de 10px y centrado horizontal */
     text-align: center;
     width: 400px;
-    /* Ancho fijo para cada enlace */
 }
 
 #convenios a:hover,
@@ -260,11 +243,8 @@
     background-color: rgb(159, 7, 186);
 }
 
-
-
 /* ----------------------------------------------------------para pantallas pequenias  */
 @media (max-width: 767px) {
-
     #btnConvenio,
     #btnInformeAnual,
     #btnestadosFinancieros,
@@ -277,10 +257,40 @@
     #btnAcuerdioMinisterial,
     #btnCodigoEtica,
     #btnManuales,
-    #btnReglamentoInterno #btnRuc,
+    #btnReglamentoInterno,
+    #btnRuc,
     #btnSUIOS,
     #btnPlanEstrategico {
+        width: 90%;
+    }
 
-        width: 500px;
+    .contenedorProyectos a {
+        width: 90%;
+    }
+
+    .proyectos .card-img-top {
+        height: auto;
+    }
+
+    .titulo,
+    .ConProyectos .nuestrosProyectos {
+        font-size: 2rem;
+    }
+
+    .inicioProyectos p {
+        font-size: 1.5rem;
+        white-space: normal;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .btn-donacion {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .btn-donacion .imagen-donar {
+        width: 40px;
+        height: 35px;
     }
 }

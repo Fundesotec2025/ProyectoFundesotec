@@ -29,7 +29,7 @@
 
 .inicioEstructura {
     position: relative;
-    background-image: url(../Img/Estructura/inicioEstructura.png);
+   background-image: url(../Img/Estructura/inicioEstructura.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

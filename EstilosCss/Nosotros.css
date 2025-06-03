@@ -1,48 +1,54 @@
-
 /* ------------------------------------------------------------- Estilo para el título de la sección "InicioNosotros" ------------------------------------------------------------- */
 
-
-.inicioNosotros {
+.inicioProyectos {
     position: relative;
-    background-image: url(../Img/Nosotros/InicioNosotros.png); 
+    background-image: url(../Img/Nosotros/InicioNosotros.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  
+  
 }
 
-.full-width {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* elimina padding-top para evitar desplazamiento */
-    padding: 0;
-    background-color: rgba(14, 14, 14, 0.5);
-
-    display: flex;             /* convierte en flex container */
-    justify-content: center;   /* centra horizontal */
-    align-items: center;       /* centra vertical */
-    text-align: center;        /* para que el texto interno se centre */
-    padding: 20px;             /* algo de padding para que no toque bordes */
-}
-
-.inicioNosotros p {
+.inicioProyectos p {
     font-family: 'Lobster', cursive;
     font-weight: bold;
     font-size: 2.5rem;
     letter-spacing: 1.5px;
-    text-indent: 0;           /* elimina sangría para que no rompa el centrado */
     line-height: 1.6;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     font-style: italic;
-    max-width: 800px;  
-    white-space: nowrap;
+    max-width: 800px;
+    white-space: nowrap; /* para que sea una línea */
+    text-align: center; /* si quieres centrar */
+    margin: 0 auto; /* centrar el bloque si tiene max-width */
 }
+
+/* Responsive para móvil */
+@media (max-width: 767px) {
+    .inicioProyectos p {
+        font-size: 1.5rem;
+        white-space: normal; /* permite que se quiebre en varias líneas */
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+
+
+.full-width {
+        position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 15%;
+    background-color: rgb(14, 14, 14, 0.5);
+}
+
 
 /* ------------------------------------------------------------- Botón Donación ------------------------------------------------------------- */
 .btn-donacion {
-    display: inline-flex;
+  display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
@@ -61,7 +67,7 @@
 }
 
 .btn-donacion:hover {
-    background-color: #ffffff;
+   background-color: #ffffff;
     color: #9f07ba;
     border-color: #d6b3ff;
 }
@@ -78,10 +84,9 @@
     filter: none;
 }
 
-/* ------------------------------------------------------------- Sección "Quiénes Somos" ------------------------------------------------------------- */
 .tituloQSomos {
     font-family: 'Roboto', sans-serif;
-    font-size: 50px;
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
     font-weight: 700;
     color: #9f07ba;
     text-align: center;
@@ -91,7 +96,7 @@
 }
 
 .parrafoNosotros {
-    font-size: 18px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     line-height: 1.7;
     color: #333;
     text-align: justify;
@@ -99,18 +104,18 @@
 }
 
 .imgQuinesSomos img {
-    width: 50%;
-    height: 90%;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     border-radius: 35px;
 }
 
-/* ------------------------------------------------------------- Misión y Visión ------------------------------------------------------------- */
 .contMisionvicion {
     background-image: url(../Img/Bibliotecas1.jpg);
 }
 
 .SubContMisionVicion {
-    padding: 60px 0 20px 0;
+    padding: 60px 20px;
     font-size: 20px;
     color: white;
     box-shadow: 0 2px 5px rgba(240, 2, 2, 0.6);
@@ -124,21 +129,21 @@
 }
 
 .contMisionvicion p {
-    font-size: 18px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     line-height: 1.7;
     color: #fff;
     margin-bottom: 25px;
     text-align: justify;
 }
 
-/* ------------------------------------------------------------- 7 años de Fundesotec ------------------------------------------------------------- */
+/* Sección 7 años */
 .contenedor7añosFundesotec {
-    padding: 50px 0 3%;
+    padding: 50px 20px;
 }
 
 .contenedor7añosFundesotec h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 50px;
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
     font-weight: 700;
     color: #9f07ba;
     text-align: center;
@@ -148,38 +153,24 @@
 }
 
 .contenedor7añosFundesotec p {
-    font-size: 18px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     line-height: 1.7;
     color: #333;
     text-align: justify;
     margin-bottom: 25px;
 }
 
-.nuestraTrayectoria {
-    text-decoration: none;
-    border: solid 4px #7a39a0;
-    color: #7a39a0;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 35px;
-}
-
-.nuestraTrayectoria:hover {
-    background-color: #7a39a0;
-    color: white;
-}
-
 .img7añosFundesotec img {
-    width: 80%;
-    height: 90%;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
     border-radius: 35px;
 }
 
-/* ------------------------------------------------------------- Galería de ayudas sociales ------------------------------------------------------------- */
+/* Galería */
 .ContGaleriaDeImagenes img {
     width: 100%;
-    height: 130%;
+    height: auto;
     border-radius: 40px;
     filter: brightness(70%);
     transition: filter 0.3s ease;
@@ -191,7 +182,7 @@
 
 .ContGaleriaDeImagenes h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 50px;
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
     font-weight: 700;
     color: #9f07ba;
     text-align: center;
@@ -204,7 +195,7 @@
     margin-bottom: 50px;
 }
 
-/* ------------------------------------------------------------- Revista Fundesotec ------------------------------------------------------------- */
+/* Revista Fundesotec */
 .contenedorRevista {
     text-align: justify;
     font-size: 22px;
@@ -213,13 +204,11 @@
 
 .subContenedorRevista {
     min-height: 100vh;
-}
-
-@media (min-width: 768px) {
-    .subContenedorRevista {
-        display: flex;
-        align-items: center;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .contenedorRevista h3 {
@@ -231,8 +220,9 @@
 }
 
 .contenedorRevista img {
-    width: 75%;
-    height: 90%;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     box-shadow: 20px 20px 20px rgba(97, 93, 97, 0.9);
 }
 
@@ -258,10 +248,10 @@
     margin-top: 20px;
 }
 
-/* ------------------------------------------------------------- Fines Institucionales ------------------------------------------------------------- */
+/* Fines institucionales */
 h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 50px;
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
     font-weight: 700;
     color: #9f07ba;
     text-align: center;
@@ -272,7 +262,7 @@ h1 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     max-width: 1200px;
     margin: 40px auto;
@@ -329,12 +319,10 @@ p {
     margin-bottom: 10px;
 }
 
-
-/* Colores de cada fin institucional */
 .fin-agricultura {
-    background-color: #d8f8d8; 
-    width: 100%;            
-    grid-column: 1 / -1;      
+    background-color: #d8f8d8;
+    width: 100%;
+    grid-column: 1 / -1;
 }
 
 .fin-desarrollo { background-color: #dcfcdc; }
@@ -344,8 +332,6 @@ p {
 .fin-emprendimientos { background-color: #f5d5e4; }
 .fin-tecnologia { background-color: #f2e6ff; }
 
-
-/* ------------------------------------------------------------- Dr. Porfirio Jiménez ------------------------------------------------------------- */
 .contDrPorfilioJ {
     background-image: url(../Img/Bibliotecas1.jpg);
     text-align: justify;
@@ -353,7 +339,7 @@ p {
 }
 
 .subcontDrPorfilioJ {
-    padding: 100px 0 5px 0;
+    padding: 100px 20px 5px;
     font-size: 20px;
     color: white;
     box-shadow: 0 2px 5px rgba(240, 2, 2, 0.6);
@@ -361,8 +347,9 @@ p {
 }
 
 .contDrPorfilioJ img {
-    width: 70%;
-    height: 90%;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -382,30 +369,20 @@ p {
     margin-bottom: 25px;
 }
 
-/* ------------------------------------------------------------- Estilos Responsivos ------------------------------------------------------------- */
 @media (max-width: 767px) {
     html {
         font-size: 14px;
     }
 
-    .tituloQSomos {
-        font-size: 30px;
+    .tituloQSomos,
+    .contenedor7añosFundesotec h3,
+    .ContGaleriaDeImagenes h2,
+    h1 {
+        font-size: 1.5rem;
     }
 
     .inicioNosotros p {
-        font-size: 20px;
-    }
-
-    .imgQuinesSomos img,
-    .img7añosFundesotec img,
-    .contenedorRevista img {
-        width: 100%;
-        height: auto;
-    }
-
-    .ContGaleriaDeImagenes img {
-        width: 90%;
-        height: auto;
+        font-size: 1.2rem;
     }
 
     .nuestraTrayectoria,
@@ -420,5 +397,8 @@ p {
         margin-bottom: 10px;
         padding: 20px 10px;
     }
-}
 
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}

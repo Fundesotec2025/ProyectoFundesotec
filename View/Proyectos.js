@@ -153,3 +153,16 @@ function ocultarRuc() {
 function verRuc() {
     $('#Ruc').toggle();
 }
+
+$(document).ready(function () {
+    $("#convenios").hide();
+    $("#planAnual").hide();
+
+    $("#btnConvenio").click(function () {
+        $("#convenios").slideToggle("slow");
+    });
+
+    $("#btnPlanAnual").click(function () {
+        $("#planAnual").slideToggle("slow");
+    });
+});

@@ -1,10 +1,11 @@
-:root {
-  --morado-principal: #9f07ba;
-  --morado-secundario: #c96de0;
-  --morado-oscuro: #740389;
-  --gris-claro: #f7f7f7;
-  --texto: #333;
-}
+  :root {
+        --morado-principal: #9f07ba;
+        --morado-secundario: #c96de0;
+        --morado-oscuro: #740389;
+        --gris-claro: #f7f7f7;
+        --texto: #333;
+      }
+
 
 /* HERO */
 .hero-section {
@@ -85,278 +86,432 @@
   }
 }
 
+/* INFO SECTION */
 
-/***************************/
+ /* Cards Section */
+    .cards-section {
+      padding: 80px 0;
+      background: white;
+      margin-top: -50px;
+      position: relative;
+      z-index: 3;
+      border-radius: 50px 50px 0 0;
+    }
 
+    .hero-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
 
+    .card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid #f0f0f0;
+    }
 
-/* Mission */
-.mission {
-  max-width: 350px;
-  margin: 3rem auto 0;
-  text-align: center;
-  color: var(--color-morado-principal);
-}
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    }
 
-.mission i {
-  margin-bottom: 0.5rem;
-}
+    .card i {
+      color: #740389;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease;
+    }
 
-/* Facilities Grid */
-.facilities-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
+    .card:hover i {
+      transform: scale(1.1);
+    }
 
-.facility-card {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 8px 20px var(--shadow);
-  transition: box-shadow 0.3s ease;
-}
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #313131;
+    }
 
-.facility-card:hover {
-  box-shadow: 0 12px 30px var(--shadow);
-}
+    .card p {
+      color: #0a0a0a;
+      font-size: 1.1rem;
+    }
 
-.facility-card h3 {
-  color: var(--color-morado-principal);
-  margin-top: 1rem;
-}
+    /* Section Styles */
+    .section {
+      padding: 80px 0;
+background-color:#9f07ba;
+    }
 
-.facility-card p {
-  margin: 1rem 0;
-  color: var(--color-morado-oscuro);
-}
+    .section:nth-child(even) {
+      background: #f8f9ff;
+    }
 
-.facility-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: var(--texto);
-}
+    .section h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #252323;
+      position: relative;
+    }
 
-.facility-card li {
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
+    .section h2::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(45deg, #667eea, #764ba2);
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
 
-.facility-card li i {
-  color: var(--color-morado-principal);
-}
+    .section-subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #fffafa;
+      margin-bottom: 3rem;
+    }
 
-/* Subsidies Section */
-.subsidies-section {
-  background: white;
-  border-radius: 12px;
-  padding: 3rem 2rem;
-  box-shadow: 0 8px 20px var(--shadow);
-}
+    /* Timeline */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
 
-.subsidies-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-}
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(180deg, #dddfe4, #764ba2);
+      transform: translateX(-50%);
+    }
 
-.subsidy-info {
-  flex: 1 1 350px;
-}
+    .timeline-item {
+      position: relative;
+      margin: 2rem 0;
+      background:#9f07ba;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      width: 45%;
+      transition: all 0.3s ease;
+    }
 
-.subsidy-info strong {
-  font-size: 2.5rem;
-  color: var(--color-morado-principal);
-}
+    .timeline-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
 
-.subsidy-info .details {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
+    .timeline-item:nth-child(odd) {
+      left: 0;
+    }
 
-.subsidy-info article {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
+    .timeline-item:nth-child(even) {
+      left: 55%;
+    }
 
-.subsidy-info article i {
-  font-size: 2rem;
-  color: var(--color-morado-principal);
-}
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #667eea;
+      border: 4px solid white;
+      border-radius: 50%;
+      top: 2rem;
+      box-shadow: 0 0 0 4px #667eea;
+    }
 
-.subsidy-info article h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  color: var(--color-morado-oscuro);
-}
+    .timeline-item:nth-child(odd)::before {
+      right: -41px;
+    }
 
-.subsidy-info article p {
-  margin: 0;
-  color: var(--texto);
-}
+    .timeline-item:nth-child(even)::before {
+      left: -41px;
+    }
 
-/* Pie chart */
-.pie-chart {
-  --size: 180px;
-  position: relative;
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  background: conic-gradient(
-    var(--color-morado-principal) calc(var(--percentage) * 1%),
-    var(--gris-claro) 0
-  );
-  box-shadow: 0 0 10px var(--color-morado-principal);
-  margin: 0 auto;
-}
+    .timeline-item time {
+      font-weight: 700;
+      color: #eeecee;
+      font-size: 1.1rem;
+    }
 
-.pie-segment {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-}
+    .timeline-item p {
+      margin-top: 0.5rem;
+      color: #fff9f9;
+    }
 
-.pie-center {
-  position: absolute;
-  inset: 30%;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.85rem;
-  color: var(--color-morado-principal);
-  text-align: center;
-  padding: 0 10px;
-}
+    /* Mission Box */
+    .mission {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 3rem;
+      border-radius: 20px;
+      text-align: center;
+      margin-top: 3rem;
+    }
 
-/* Legend */
-.chart-legend {
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 1rem;
-  color: var(--texto);
-}
+    .mission i {
+      margin-bottom: 1rem;
+    }
 
-.legend-color {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
-  margin-right: 0.5rem;
-  vertical-align: middle;
-}
+    .mission h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
 
-.legend-color.subsidized {
-  background: var(--color-morado-principal);
-}
+    /* Facilities Grid */
+    .facilities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
 
-.legend-color.regular {
-  background: var(--gris-claro);
-}
+    .facility-card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
 
-/* Contact Section */
-.contact-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
+    .facility-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    }
 
-.contact-card {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 8px 20px var(--shadow);
-  text-align: center;
-  color: var(--color-morado-principal);
-}
+    .facility-card i {
+      color: #667eea;
+      margin-bottom: 1.5rem;
+    }
 
-.contact-card h3 {
-  margin-top: 1rem;
-}
+    .facility-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
 
-.contact-card p,
-.contact-card address {
-  margin-top: 0.5rem;
-  color: var(--color-morado-oscuro);
-  font-style: normal;
-}
+    .facility-card > p {
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
 
-.contact-cta {
-  background: var(--color-morado-principal);
-  color: white;
-  border-radius: 12px;
-  padding: 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-}
+    .facility-card ul {
+      list-style: none;
+      text-align: left;
+    }
 
-.contact-cta h3 {
-  font-size: 1.8rem;
-}
+    .facility-card li {
+      padding: 0.5rem 0;
+      color: #666;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
 
-.contact-cta button {
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 50px;
-  font-weight: 700;
-  cursor: pointer;
-  background-color: var(--btn-secondary-bg);
-  color: white;
-  transition: background-color 0.3s;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  justify-content: center;
-}
+    .facility-card li i {
+      color: #4caf50;
+      font-size: 0.9rem;
+      margin: 0;
+    }
 
-.contact-cta button:hover {
-  background-color: var(--btn-secondary-hover);
-}
+    /* Subsidies Section */
+    .subsidies-section {
+      background: linear-gradient(135deg, #f8f9ff, #e8eeff);
+    }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .hero-section {
-    grid-template-columns: 1fr;
-  }
+    .subsidies-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin-top: 3rem;
+    }
 
-  .hero-cards {
-    flex-direction: column;
-  }
+    .subsidy-info > p {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
 
-  .nav-toggle {
-    display: block;
-  }
+    .details {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
 
-  .nav-menu {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: white;
-    flex-direction: column;
-    gap: 0;
-    width: 200px;
-    box-shadow: 0 8px 20px var(--shadow);
-    display: none;
-    padding: 1rem 0;
-    border-radius: 0 0 0 8px;
-  }
+    .details article {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
 
-  .nav-menu.active {
-    display: flex;
-  }
+    .details article:hover {
+      transform: translateX(10px);
+    }
 
-  .nav-menu li a {
-    padding: 0.75rem 1.5rem;
-  }
-}
+    .details i {
+      font-size: 2rem;
+      color: #667eea;
+      width: 60px;
+      text-align: center;
+    }
+
+    .details h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .details p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    /* Pie Chart */
+    .subsidy-chart {
+      text-align: center;
+    }
+
+    .pie-chart {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto 2rem;
+      border-radius: 50%;
+      background: conic-gradient(
+        #667eea 0deg 105.37deg,
+        #e0e7ff 105.37deg 360deg
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+
+    .pie-center {
+      width: 120px;
+      height: 120px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #333;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .chart-legend {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .chart-legend > div {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .legend-color {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+    }
+
+    .legend-color.subsidized {
+      background: #667eea;
+    }
+
+    .legend-color.regular {
+      background: #e0e7ff;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-stats {
+        gap: 1rem;
+      }
+
+      .hero-stats > div {
+        padding: 1rem 1.5rem;
+      }
+
+      .timeline::before {
+        left: 20px;
+      }
+
+      .timeline-item {
+        width: calc(100% - 40px);
+        left: 40px !important;
+      }
+
+      .timeline-item::before {
+        left: -41px !important;
+      }
+
+      .subsidies-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .pie-chart {
+        width: 250px;
+        height: 250px;
+      }
+
+      .chart-legend {
+        gap: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 15px;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-stats {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .facilities-grid {
+        grid-template-columns: 1fr;
+      }
+    }
